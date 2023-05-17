@@ -1,0 +1,5 @@
+SELECT  SYSDATE,
+        LAST_DAY(SYSDATE),
+        LAST_DAY('23/05/02')
+FROM dual
+;

@@ -1,0 +1,1395 @@
+[DEBUG], 2023-05-09 11:25:47 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:25:47 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:25:47 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@22d6f11]
+[DEBUG], 2023-05-09 11:25:47 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@314b8f2d
+[DEBUG], 2023-05-09 11:25:47 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 11:25:47 pcwLog:39 - 등록 성공!
+[DEBUG], 2023-05-09 11:25:47 pcwLog:191 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:25:47 pcwLog:192 - 2. conn:oracle.jdbc.driver.T4CConnection@a1217f9
+[DEBUG], 2023-05-09 11:25:47 pcwLog:193 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@22d6f11]
+[DEBUG], 2023-05-09 11:25:47 pcwLog:198 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2baa8d82
+[DEBUG], 2023-05-09 11:25:47 pcwLog:203 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@48bfb884
+[DEBUG], 2023-05-09 11:25:47 pcwLog:220 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:25:47, regId=ll, modDt=2023-05-09 11:25:47, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@332f25c8]
+[DEBUG], 2023-05-09 11:25:47 pcwLog:18 - *조회 성공!
+[DEBUG], 2023-05-09 11:25:47 pcwLog:128 - 1. sql:
+
+[DEBUG], 2023-05-09 11:25:47 pcwLog:129 - 2. conn:oracle.jdbc.driver.T4CConnection@6ad6fa53
+[DEBUG], 2023-05-09 11:25:47 pcwLog:130 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@22d6f11]
+[DEBUG], 2023-05-09 11:25:47 pcwLog:145 - --------------------
+[DEBUG], 2023-05-09 11:25:47 pcwLog:146 - -SQLException-ORA-17104: 실행할 SQL 문은 비어 있거나 널일 수 없음
+[DEBUG], 2023-05-09 11:25:47 pcwLog:147 - --------------------
+[DEBUG], 2023-05-09 11:25:47 pcwLog:27 - flag : 0
+[DEBUG], 2023-05-09 11:30:24 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:30:24 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:30:24 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@650eab8]
+[DEBUG], 2023-05-09 11:30:24 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@439a8f59
+[DEBUG], 2023-05-09 11:30:24 pcwLog:93 - -------------
+[DEBUG], 2023-05-09 11:30:24 pcwLog:94 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-09 11:30:24 pcwLog:95 - -------------
+[DEBUG], 2023-05-09 11:30:24 pcwLog:41 - 등록 실패!
+[DEBUG], 2023-05-09 11:30:24 pcwLog:191 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:30:24 pcwLog:192 - 2. conn:oracle.jdbc.driver.T4CConnection@ec0c838
+[DEBUG], 2023-05-09 11:30:24 pcwLog:193 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@650eab8]
+[DEBUG], 2023-05-09 11:30:24 pcwLog:198 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@29cfd92b
+[DEBUG], 2023-05-09 11:30:24 pcwLog:203 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@35c09b94
+[DEBUG], 2023-05-09 11:30:24 pcwLog:220 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:25:47, regId=ll, modDt=2023-05-09 11:25:47, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@6ce90bc5]
+[DEBUG], 2023-05-09 11:30:24 pcwLog:18 - *조회 성공!
+[DEBUG], 2023-05-09 11:30:24 pcwLog:128 - 1. sql:
+
+[DEBUG], 2023-05-09 11:30:24 pcwLog:129 - 2. conn:oracle.jdbc.driver.T4CConnection@7004e3d
+[DEBUG], 2023-05-09 11:30:24 pcwLog:130 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@650eab8]
+[DEBUG], 2023-05-09 11:30:24 pcwLog:145 - --------------------
+[DEBUG], 2023-05-09 11:30:24 pcwLog:146 - -SQLException-ORA-17104: 실행할 SQL 문은 비어 있거나 널일 수 없음
+[DEBUG], 2023-05-09 11:30:24 pcwLog:147 - --------------------
+[DEBUG], 2023-05-09 11:30:24 pcwLog:27 - flag : 0
+[DEBUG], 2023-05-09 11:34:11 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:34:11 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:34:11 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5357c287]
+[DEBUG], 2023-05-09 11:34:11 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@493dfb8e
+[DEBUG], 2023-05-09 11:34:11 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 11:34:11 pcwLog:39 - 등록 성공!
+[DEBUG], 2023-05-09 11:34:11 pcwLog:191 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:34:11 pcwLog:192 - 2. conn:oracle.jdbc.driver.T4CConnection@4a8ab068
+[DEBUG], 2023-05-09 11:34:11 pcwLog:193 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5357c287]
+[DEBUG], 2023-05-09 11:34:11 pcwLog:198 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6bab2585
+[DEBUG], 2023-05-09 11:34:11 pcwLog:203 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@66434cc8
+[DEBUG], 2023-05-09 11:34:11 pcwLog:220 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:34:11, regId=ll, modDt=2023-05-09 11:34:11, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@2d84cb86]
+[DEBUG], 2023-05-09 11:34:11 pcwLog:18 - *조회 성공!
+[DEBUG], 2023-05-09 11:34:11 pcwLog:128 - 1. sql:
+
+[DEBUG], 2023-05-09 11:34:11 pcwLog:129 - 2. conn:oracle.jdbc.driver.T4CConnection@5b3f3ba0
+[DEBUG], 2023-05-09 11:34:11 pcwLog:130 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5357c287]
+[DEBUG], 2023-05-09 11:34:11 pcwLog:145 - --------------------
+[DEBUG], 2023-05-09 11:34:11 pcwLog:146 - -SQLException-ORA-17104: 실행할 SQL 문은 비어 있거나 널일 수 없음
+[DEBUG], 2023-05-09 11:34:11 pcwLog:147 - --------------------
+[DEBUG], 2023-05-09 11:34:11 pcwLog:27 - flag : 0
+[DEBUG], 2023-05-09 11:39:40 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:39:40 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:39:40 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-09 11:39:40 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6a1d204a
+[DEBUG], 2023-05-09 11:39:40 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 11:39:40 pcwLog:47 - 등록 성공!
+[DEBUG], 2023-05-09 11:39:40 pcwLog:192 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:39:40 pcwLog:193 - 2. conn:oracle.jdbc.driver.T4CConnection@2fab4aff
+[DEBUG], 2023-05-09 11:39:40 pcwLog:194 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-09 11:39:40 pcwLog:199 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5cc69cfe
+[DEBUG], 2023-05-09 11:39:40 pcwLog:204 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@4917d36b
+[DEBUG], 2023-05-09 11:39:40 pcwLog:221 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:39:40, regId=ll, modDt=2023-05-09 11:39:40, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@47c64cfe]
+[DEBUG], 2023-05-09 11:39:40 pcwLog:18 - *조회 성공!
+[DEBUG], 2023-05-09 11:39:40 pcwLog:129 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 11:39:40 pcwLog:130 - 2. conn:oracle.jdbc.driver.T4CConnection@7c211fd0
+[DEBUG], 2023-05-09 11:39:40 pcwLog:131 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-09 11:39:40 pcwLog:134 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@71a3a190
+[DEBUG], 2023-05-09 11:39:40 pcwLog:141 - 5. flag:1
+[DEBUG], 2023-05-09 11:39:40 pcwLog:27 - flag : 1
+[DEBUG], 2023-05-09 11:55:07 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:55:07 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:55:07 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@f0e995e]
+[DEBUG], 2023-05-09 11:55:07 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@3a4e343
+[DEBUG], 2023-05-09 11:55:07 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 11:55:07 pcwLog:55 - 등록 성공!
+[DEBUG], 2023-05-09 11:55:07 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = 4,            
+     contents=4,           
+     reg_dt = 4,             
+     reg_id = 4,             
+     mod_dt = SYSDATE,     
+     mod_id =4,             
+ WHERE seq = 4             
+
+[DEBUG], 2023-05-09 11:55:07 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@b672aa8
+[DEBUG], 2023-05-09 11:55:07 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@f0e995e]
+[DEBUG], 2023-05-09 11:55:07 pcwLog:34 - flag : 0
+[DEBUG], 2023-05-09 11:55:07 pcwLog:213 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:55:07 pcwLog:214 - 2. conn:oracle.jdbc.driver.T4CConnection@29cfd92b
+[DEBUG], 2023-05-09 11:55:07 pcwLog:215 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@f0e995e]
+[DEBUG], 2023-05-09 11:55:07 pcwLog:220 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@11dee337
+[DEBUG], 2023-05-09 11:55:07 pcwLog:225 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@7b44b63d
+[DEBUG], 2023-05-09 11:55:07 pcwLog:242 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:55:07, regId=ll, modDt=2023-05-09 11:55:07, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@6f8f8a80]
+[DEBUG], 2023-05-09 11:55:07 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 11:55:07 pcwLog:151 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 11:55:07 pcwLog:152 - 2. conn:oracle.jdbc.driver.T4CConnection@588ffeb
+[DEBUG], 2023-05-09 11:55:07 pcwLog:153 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@f0e995e]
+[DEBUG], 2023-05-09 11:55:07 pcwLog:156 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4482469c
+[DEBUG], 2023-05-09 11:55:07 pcwLog:163 - 5. flag:1
+[DEBUG], 2023-05-09 11:55:07 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 11:55:51 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:55:51 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:55:51 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-09 11:55:51 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@72ccd81a
+[DEBUG], 2023-05-09 11:55:51 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 11:55:51 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 11:55:51 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = 4,            
+     contents=4,           
+     reg_dt = 4,             
+     reg_id = 4,             
+     mod_dt = SYSDATE,     
+     mod_id =4,             
+ WHERE seq = 4             
+
+[DEBUG], 2023-05-09 11:55:51 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@55f3c410
+[DEBUG], 2023-05-09 11:55:51 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-09 11:55:51 pcwLog:37 - 업데이트 실패!
+[DEBUG], 2023-05-09 11:55:51 pcwLog:39 - flag : 0
+[DEBUG], 2023-05-09 11:55:51 pcwLog:213 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:55:51 pcwLog:214 - 2. conn:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-09 11:55:51 pcwLog:215 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-09 11:55:51 pcwLog:220 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@644c78d4
+[DEBUG], 2023-05-09 11:55:52 pcwLog:225 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@693e4d19
+[DEBUG], 2023-05-09 11:55:52 pcwLog:242 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:55:51, regId=ll, modDt=2023-05-09 11:55:51, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@588ffeb]
+[DEBUG], 2023-05-09 11:55:52 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 11:55:52 pcwLog:151 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 11:55:52 pcwLog:152 - 2. conn:oracle.jdbc.driver.T4CConnection@278f8425
+[DEBUG], 2023-05-09 11:55:52 pcwLog:153 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-09 11:55:52 pcwLog:156 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5eeedb60
+[DEBUG], 2023-05-09 11:55:52 pcwLog:163 - 5. flag:1
+[DEBUG], 2023-05-09 11:55:52 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 11:57:02 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:57:02 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:57:02 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-09 11:57:02 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6a1d204a
+[DEBUG], 2023-05-09 11:57:02 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 11:57:02 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 11:57:02 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = ?,            
+     contents=?,           
+     reg_dt = ?,             
+     reg_id = ?,             
+     mod_dt = SYSDATE,     
+     mod_id =?,             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 11:57:02 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@2fab4aff
+[DEBUG], 2023-05-09 11:57:02 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-09 11:57:02 pcwLog:37 - 업데이트 실패!
+[DEBUG], 2023-05-09 11:57:02 pcwLog:39 - flag : 0
+[DEBUG], 2023-05-09 11:57:02 pcwLog:213 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:57:02 pcwLog:214 - 2. conn:oracle.jdbc.driver.T4CConnection@21c64522
+[DEBUG], 2023-05-09 11:57:02 pcwLog:215 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-09 11:57:02 pcwLog:220 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@460f76a6
+[DEBUG], 2023-05-09 11:57:02 pcwLog:225 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@4a699efa
+[DEBUG], 2023-05-09 11:57:02 pcwLog:242 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:57:02, regId=ll, modDt=2023-05-09 11:57:02, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4b1c0397]
+[DEBUG], 2023-05-09 11:57:02 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 11:57:02 pcwLog:151 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 11:57:02 pcwLog:152 - 2. conn:oracle.jdbc.driver.T4CConnection@7c28c1
+[DEBUG], 2023-05-09 11:57:02 pcwLog:153 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-09 11:57:02 pcwLog:156 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3703bf3c
+[DEBUG], 2023-05-09 11:57:02 pcwLog:163 - 5. flag:1
+[DEBUG], 2023-05-09 11:57:02 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 11:57:50 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 11:57:50 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 11:57:50 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 11:57:50 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7f69d591
+[DEBUG], 2023-05-09 11:57:50 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 11:57:50 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 11:57:50 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = 4,            
+     contents=4,           
+     reg_dt = 4,             
+     reg_id = 4,             
+     mod_dt = SYSDATE,     
+     mod_id =4,             
+ WHERE seq = 4             
+
+[DEBUG], 2023-05-09 11:57:50 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@611f8234
+[DEBUG], 2023-05-09 11:57:50 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 11:57:50 pcwLog:138 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7f811d00
+[DEBUG], 2023-05-09 11:57:50 pcwLog:153 - -------------
+[DEBUG], 2023-05-09 11:57:50 pcwLog:154 - SQLException ORA-17003: 열 인덱스가 부적합합니다.
+[DEBUG], 2023-05-09 11:57:50 pcwLog:155 - -------------
+[DEBUG], 2023-05-09 11:57:50 pcwLog:37 - 업데이트 실패!
+[DEBUG], 2023-05-09 11:57:50 pcwLog:39 - flag : 0
+[DEBUG], 2023-05-09 11:57:50 pcwLog:248 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 11:57:50 pcwLog:249 - 2. conn:oracle.jdbc.driver.T4CConnection@7807ac2c
+[DEBUG], 2023-05-09 11:57:50 pcwLog:250 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 11:57:50 pcwLog:255 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@a77614d
+[DEBUG], 2023-05-09 11:57:50 pcwLog:260 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@511d5d04
+[DEBUG], 2023-05-09 11:57:50 pcwLog:277 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 11:57:50, regId=ll, modDt=2023-05-09 11:57:50, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4b1abd11]
+[DEBUG], 2023-05-09 11:57:50 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 11:57:50 pcwLog:186 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 11:57:50 pcwLog:187 - 2. conn:oracle.jdbc.driver.T4CConnection@2b9b7f1f
+[DEBUG], 2023-05-09 11:57:50 pcwLog:188 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 11:57:50 pcwLog:191 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5d39f2d8
+[DEBUG], 2023-05-09 11:57:50 pcwLog:198 - 5. flag:1
+[DEBUG], 2023-05-09 11:57:50 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:03:17 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:03:17 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:03:17 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:03:18 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7f69d591
+[DEBUG], 2023-05-09 12:03:18 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:03:18 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 12:03:18 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = ?,            
+     contents=?,           
+     reg_dt = ?,             
+     reg_id = ?,             
+     mod_dt = SYSDATE,     
+     mod_id =?,             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 12:03:18 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@611f8234
+[DEBUG], 2023-05-09 12:03:18 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:03:18 pcwLog:138 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7f811d00
+[DEBUG], 2023-05-09 12:03:18 pcwLog:154 - -------------
+[DEBUG], 2023-05-09 12:03:18 pcwLog:155 - SQLException ORA-01747: 열명을 올바르게 지정해 주십시오
+
+[DEBUG], 2023-05-09 12:03:18 pcwLog:156 - -------------
+[DEBUG], 2023-05-09 12:03:18 pcwLog:37 - 업데이트 실패!
+[DEBUG], 2023-05-09 12:03:18 pcwLog:39 - flag : 0
+[DEBUG], 2023-05-09 12:03:18 pcwLog:249 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:03:18 pcwLog:250 - 2. conn:oracle.jdbc.driver.T4CConnection@2baa8d82
+[DEBUG], 2023-05-09 12:03:18 pcwLog:251 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:03:18 pcwLog:256 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@a7e2d9d
+[DEBUG], 2023-05-09 12:03:18 pcwLog:261 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@1b9c1b51
+[DEBUG], 2023-05-09 12:03:18 pcwLog:278 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:03:17, regId=ll, modDt=2023-05-09 12:03:17, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@61d01788]
+[DEBUG], 2023-05-09 12:03:18 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 12:03:18 pcwLog:187 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:03:18 pcwLog:188 - 2. conn:oracle.jdbc.driver.T4CConnection@175acfb2
+[DEBUG], 2023-05-09 12:03:18 pcwLog:189 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:03:18 pcwLog:192 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@67a056f1
+[DEBUG], 2023-05-09 12:03:18 pcwLog:199 - 5. flag:1
+[DEBUG], 2023-05-09 12:03:18 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:05:02 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:05:02 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:05:02 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:02 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-09 12:05:02 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:05:02 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 12:05:02 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = ?,            
+     contents=?,           
+     reg_dt = ?,             
+     reg_id = ?,             
+     mod_dt = SYSDATE,     
+     mod_id =?,             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 12:05:02 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@8a589a2
+[DEBUG], 2023-05-09 12:05:02 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:02 pcwLog:138 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@b672aa8
+[DEBUG], 2023-05-09 12:05:02 pcwLog:160 - -------------
+[DEBUG], 2023-05-09 12:05:02 pcwLog:161 - SQLException ORA-01747: 열명을 올바르게 지정해 주십시오
+
+[DEBUG], 2023-05-09 12:05:02 pcwLog:162 - -------------
+[DEBUG], 2023-05-09 12:05:02 pcwLog:37 - 업데이트 실패!
+[DEBUG], 2023-05-09 12:05:02 pcwLog:39 - flag : 0
+[DEBUG], 2023-05-09 12:05:02 pcwLog:255 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:05:02 pcwLog:256 - 2. conn:oracle.jdbc.driver.T4CConnection@770d4269
+[DEBUG], 2023-05-09 12:05:02 pcwLog:257 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:02 pcwLog:262 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@76a82f33
+[DEBUG], 2023-05-09 12:05:02 pcwLog:267 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@2b87581
+[DEBUG], 2023-05-09 12:05:02 pcwLog:284 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:05:02, regId=ll, modDt=2023-05-09 12:05:02, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7004e3d]
+[DEBUG], 2023-05-09 12:05:02 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 12:05:02 pcwLog:193 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:05:02 pcwLog:194 - 2. conn:oracle.jdbc.driver.T4CConnection@34cf5a97
+[DEBUG], 2023-05-09 12:05:02 pcwLog:195 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:02 pcwLog:198 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b1abd11
+[DEBUG], 2023-05-09 12:05:02 pcwLog:205 - 5. flag:1
+[DEBUG], 2023-05-09 12:05:02 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:05:22 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:05:22 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:05:22 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:23 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-09 12:05:23 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:05:23 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 12:05:23 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = ?,            
+     contents=?,           
+     reg_dt = ?,             
+     reg_id = ?,             
+     mod_dt = SYSDATE,     
+     mod_id =?,             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 12:05:23 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@8a589a2
+[DEBUG], 2023-05-09 12:05:23 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:23 pcwLog:138 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@b672aa8
+[DEBUG], 2023-05-09 12:05:23 pcwLog:160 - -------------
+[DEBUG], 2023-05-09 12:05:23 pcwLog:161 - SQLException ORA-01747: 열명을 올바르게 지정해 주십시오
+
+[DEBUG], 2023-05-09 12:05:23 pcwLog:162 - -------------
+[DEBUG], 2023-05-09 12:05:23 pcwLog:37 - 업데이트 실패!
+[DEBUG], 2023-05-09 12:05:23 pcwLog:39 - flag : 0
+[DEBUG], 2023-05-09 12:05:23 pcwLog:255 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:05:23 pcwLog:256 - 2. conn:oracle.jdbc.driver.T4CConnection@770d4269
+[DEBUG], 2023-05-09 12:05:23 pcwLog:257 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:23 pcwLog:262 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@76a82f33
+[DEBUG], 2023-05-09 12:05:23 pcwLog:267 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@2b87581
+[DEBUG], 2023-05-09 12:05:23 pcwLog:284 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:05:22, regId=ll, modDt=2023-05-09 12:05:22, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7004e3d]
+[DEBUG], 2023-05-09 12:05:23 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 12:05:23 pcwLog:193 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:05:23 pcwLog:194 - 2. conn:oracle.jdbc.driver.T4CConnection@34cf5a97
+[DEBUG], 2023-05-09 12:05:23 pcwLog:195 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@4e28bdd1]
+[DEBUG], 2023-05-09 12:05:23 pcwLog:198 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b1abd11
+[DEBUG], 2023-05-09 12:05:23 pcwLog:205 - 5. flag:1
+[DEBUG], 2023-05-09 12:05:23 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:05:52 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:05:52 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:05:52 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@53f48368]
+[DEBUG], 2023-05-09 12:05:52 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@63cd604c
+[DEBUG], 2023-05-09 12:05:52 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:05:52 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 12:05:52 pcwLog:132 - 1. sql:
+ UPDATE board              
+ SET                       
+     title = ?,            
+     contents=?,           
+     reg_dt = ?,             
+     reg_id = ?,             
+     mod_dt = SYSDATE,     
+     mod_id =?,             
+ WHERE seq = 3             
+
+[DEBUG], 2023-05-09 12:05:52 pcwLog:133 - 2. conn: oracle.jdbc.driver.T4CConnection@c65a5ef
+[DEBUG], 2023-05-09 12:05:52 pcwLog:134 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@53f48368]
+[DEBUG], 2023-05-09 12:05:52 pcwLog:138 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@2fab4aff
+[DEBUG], 2023-05-09 12:05:52 pcwLog:160 - -------------
+[DEBUG], 2023-05-09 12:05:52 pcwLog:161 - SQLException ORA-01747: 열명을 올바르게 지정해 주십시오
+
+[DEBUG], 2023-05-09 12:05:52 pcwLog:162 - -------------
+[DEBUG], 2023-05-09 12:05:52 pcwLog:37 - 업데이트 실패!
+[DEBUG], 2023-05-09 12:05:52 pcwLog:39 - flag : 0
+[DEBUG], 2023-05-09 12:05:52 pcwLog:255 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:05:52 pcwLog:256 - 2. conn:oracle.jdbc.driver.T4CConnection@4a8ab068
+[DEBUG], 2023-05-09 12:05:52 pcwLog:257 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@53f48368]
+[DEBUG], 2023-05-09 12:05:52 pcwLog:262 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6bab2585
+[DEBUG], 2023-05-09 12:05:52 pcwLog:267 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@66434cc8
+[DEBUG], 2023-05-09 12:05:52 pcwLog:284 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:05:52, regId=ll, modDt=2023-05-09 12:05:52, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@2d84cb86]
+[DEBUG], 2023-05-09 12:05:52 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 12:05:52 pcwLog:193 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:05:52 pcwLog:194 - 2. conn:oracle.jdbc.driver.T4CConnection@5b3f3ba0
+[DEBUG], 2023-05-09 12:05:52 pcwLog:195 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@53f48368]
+[DEBUG], 2023-05-09 12:05:52 pcwLog:198 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3f36b447
+[DEBUG], 2023-05-09 12:05:52 pcwLog:205 - 5. flag:1
+[DEBUG], 2023-05-09 12:05:52 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:14:45 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:14:45 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:14:45 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:14:45 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7f69d591
+[DEBUG], 2023-05-09 12:14:45 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:14:45 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 12:14:45 pcwLog:131 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 12:14:45 pcwLog:132 - 2. conn: oracle.jdbc.driver.T4CConnection@611f8234
+[DEBUG], 2023-05-09 12:14:45 pcwLog:133 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:14:45 pcwLog:136 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7f811d00
+[DEBUG], 2023-05-09 12:14:45 pcwLog:145 - 5.flag :1
+[DEBUG], 2023-05-09 12:14:45 pcwLog:35 - 업데이트 성공!
+[DEBUG], 2023-05-09 12:14:45 pcwLog:39 - flag : 1
+[DEBUG], 2023-05-09 12:14:45 pcwLog:245 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:14:45 pcwLog:246 - 2. conn:oracle.jdbc.driver.T4CConnection@f19c9d2
+[DEBUG], 2023-05-09 12:14:45 pcwLog:247 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:14:45 pcwLog:252 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b6166aa
+[DEBUG], 2023-05-09 12:14:45 pcwLog:257 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@5183d589
+[DEBUG], 2023-05-09 12:14:45 pcwLog:274 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:14:45, regId=ll, modDt=2023-05-09 12:14:45, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@695a69a1]
+[DEBUG], 2023-05-09 12:14:45 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 12:14:45 pcwLog:183 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:14:45 pcwLog:184 - 2. conn:oracle.jdbc.driver.T4CConnection@61d01788
+[DEBUG], 2023-05-09 12:14:45 pcwLog:185 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-09 12:14:45 pcwLog:188 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@19593091
+[DEBUG], 2023-05-09 12:14:45 pcwLog:195 - 5. flag:1
+[DEBUG], 2023-05-09 12:14:45 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:16:23 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:16:23 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:16:23 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@30f5a68a]
+[DEBUG], 2023-05-09 12:16:23 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@61861a29
+[DEBUG], 2023-05-09 12:16:23 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:16:23 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 12:16:23 pcwLog:131 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 12:16:23 pcwLog:132 - 2. conn: oracle.jdbc.driver.T4CConnection@4f8969b0
+[DEBUG], 2023-05-09 12:16:23 pcwLog:133 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@30f5a68a]
+[DEBUG], 2023-05-09 12:16:23 pcwLog:136 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@8a589a2
+[DEBUG], 2023-05-09 12:16:23 pcwLog:152 - 5.flag :1
+[DEBUG], 2023-05-09 12:16:23 pcwLog:35 - 업데이트 성공!
+[DEBUG], 2023-05-09 12:16:23 pcwLog:39 - flag : 1
+[DEBUG], 2023-05-09 12:16:23 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:16:23 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@b672aa8
+[DEBUG], 2023-05-09 12:16:23 pcwLog:254 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@30f5a68a]
+[DEBUG], 2023-05-09 12:16:23 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6e46d9f4
+[DEBUG], 2023-05-09 12:16:23 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@6ac97b84
+[DEBUG], 2023-05-09 12:16:23 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=4, contents=4, readCnt=0, regDt=2023-05-09 12:16:23, regId=ll, modDt=2023-05-09 12:16:23, modId=4, toString()=com.pcwk.ehr.board.dao.BoardDTO@6e6fce47]
+[DEBUG], 2023-05-09 12:16:23 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 12:16:23 pcwLog:190 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:16:23 pcwLog:191 - 2. conn:oracle.jdbc.driver.T4CConnection@cda0432
+[DEBUG], 2023-05-09 12:16:23 pcwLog:192 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@30f5a68a]
+[DEBUG], 2023-05-09 12:16:23 pcwLog:195 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@588ffeb
+[DEBUG], 2023-05-09 12:16:23 pcwLog:202 - 5. flag:1
+[DEBUG], 2023-05-09 12:16:23 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:28:49 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:28:50 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:28:50 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7a8fa663]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@593e824f
+[DEBUG], 2023-05-09 12:28:50 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:28:50 pcwLog:90 - 등록 성공!
+[DEBUG], 2023-05-09 12:28:50 pcwLog:190 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:28:50 pcwLog:191 - 2. conn:oracle.jdbc.driver.T4CConnection@460f76a6
+[DEBUG], 2023-05-09 12:28:50 pcwLog:192 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7a8fa663]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:195 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@770d4269
+[DEBUG], 2023-05-09 12:28:50 pcwLog:202 - 5. flag:1
+[DEBUG], 2023-05-09 12:28:50 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:28:50 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-09 12:28:50 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7a8fa663]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@644c78d4
+[DEBUG], 2023-05-09 12:28:50 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:28:50 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:28:50 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@7bb3a9fe
+[DEBUG], 2023-05-09 12:28:50 pcwLog:254 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7a8fa663]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@f19c9d2
+[DEBUG], 2023-05-09 12:28:50 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@5cbb84b1
+[DEBUG], 2023-05-09 12:28:50 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:28:50, regId=ll, modDt=2023-05-09 12:28:50, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b3f3ba0]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:65 - =============================
+[DEBUG], 2023-05-09 12:28:50 pcwLog:66 - 등록 실패
+[DEBUG], 2023-05-09 12:28:50 pcwLog:67 - =============================
+[DEBUG], 2023-05-09 12:28:50 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:28:50 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@332f25c8
+[DEBUG], 2023-05-09 12:28:50 pcwLog:254 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7a8fa663]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@61d01788
+[DEBUG], 2023-05-09 12:28:50 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@2b9b7f1f
+[DEBUG], 2023-05-09 12:28:50 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:28:50, regId=ll, modDt=2023-05-09 12:28:50, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@264c5d07]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:19 - *조회 성공!
+[DEBUG], 2023-05-09 12:28:50 pcwLog:190 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:28:50 pcwLog:191 - 2. conn:oracle.jdbc.driver.T4CConnection@19593091
+[DEBUG], 2023-05-09 12:28:50 pcwLog:192 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7a8fa663]
+[DEBUG], 2023-05-09 12:28:50 pcwLog:195 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@175acfb2
+[DEBUG], 2023-05-09 12:28:50 pcwLog:202 - 5. flag:1
+[DEBUG], 2023-05-09 12:28:50 pcwLog:28 - flag : 1
+[DEBUG], 2023-05-09 12:29:42 pcwLog:190 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:29:42 pcwLog:191 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:29:42 pcwLog:192 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-09 12:29:42 pcwLog:195 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6fff253c
+[DEBUG], 2023-05-09 12:29:42 pcwLog:202 - 5. flag:0
+[DEBUG], 2023-05-09 12:29:42 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:29:42 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@c65a5ef
+[DEBUG], 2023-05-09 12:29:42 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-09 12:29:42 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@2fab4aff
+[DEBUG], 2023-05-09 12:29:42 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:29:42 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:29:42 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@55f3c410
+[DEBUG], 2023-05-09 12:29:42 pcwLog:254 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-09 12:29:42 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4a8ab068
+[DEBUG], 2023-05-09 12:29:42 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@1136b469
+[DEBUG], 2023-05-09 12:29:42 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:29:42, regId=ll, modDt=2023-05-09 12:29:42, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@cda0432]
+[DEBUG], 2023-05-09 12:29:42 pcwLog:65 - =============================
+[DEBUG], 2023-05-09 12:29:42 pcwLog:66 - 등록 실패
+[DEBUG], 2023-05-09 12:29:42 pcwLog:67 - =============================
+[DEBUG], 2023-05-09 12:34:15 pcwLog:190 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:34:15 pcwLog:191 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:34:15 pcwLog:192 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-09 12:34:15 pcwLog:195 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@72ccd81a
+[DEBUG], 2023-05-09 12:34:16 pcwLog:202 - 5. flag:1
+[DEBUG], 2023-05-09 12:34:16 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:34:16 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@5cc69cfe
+[DEBUG], 2023-05-09 12:34:16 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-09 12:34:16 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7997b197
+[DEBUG], 2023-05-09 12:34:16 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:34:16 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:34:16 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@6bab2585
+[DEBUG], 2023-05-09 12:34:16 pcwLog:254 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-09 12:34:16 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@532a02d9
+[DEBUG], 2023-05-09 12:34:16 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@286b39c2
+[DEBUG], 2023-05-09 12:34:16 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:34:15, regId=ll, modDt=2023-05-09 12:34:15, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@7c28c1]
+[DEBUG], 2023-05-09 12:34:16 pcwLog:61 - =============================
+[DEBUG], 2023-05-09 12:34:16 pcwLog:62 - 등록 성공
+[DEBUG], 2023-05-09 12:34:16 pcwLog:63 - =============================
+[DEBUG], 2023-05-09 12:48:23 pcwLog:190 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 12:48:23 pcwLog:191 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 12:48:23 pcwLog:192 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@71b3bc45]
+[DEBUG], 2023-05-09 12:48:23 pcwLog:195 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b6579e8
+[DEBUG], 2023-05-09 12:48:23 pcwLog:202 - 5. flag:1
+[DEBUG], 2023-05-09 12:48:23 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 12:48:23 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@8a589a2
+[DEBUG], 2023-05-09 12:48:23 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@71b3bc45]
+[DEBUG], 2023-05-09 12:48:23 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@b672aa8
+[DEBUG], 2023-05-09 12:48:23 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 12:48:24 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 12:48:24 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@460f76a6
+[DEBUG], 2023-05-09 12:48:24 pcwLog:254 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@71b3bc45]
+[DEBUG], 2023-05-09 12:48:24 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@770d4269
+[DEBUG], 2023-05-09 12:48:24 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@17ae7628
+[DEBUG], 2023-05-09 12:48:24 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 12:48:23, regId=ll, modDt=2023-05-09 12:48:23, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@27f1bbe0]
+[DEBUG], 2023-05-09 12:48:24 pcwLog:63 - =============================
+[DEBUG], 2023-05-09 12:48:24 pcwLog:64 - 등록 성공
+[DEBUG], 2023-05-09 12:48:24 pcwLog:65 - =============================
+[DEBUG], 2023-05-09 12:48:24 pcwLog:131 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 12:48:24 pcwLog:132 - 2. conn: oracle.jdbc.driver.T4CConnection@25d958c6
+[DEBUG], 2023-05-09 12:48:24 pcwLog:133 - 3. param: BoardDTO [seq=3, title=hU, contents=eU, readCnt=0, regDt=2023-05-09 12:48:23, regId=ll, modDt=2023-05-09 12:48:23, modId=oU, toString()=com.pcwk.ehr.board.dao.BoardDTO@27f1bbe0]
+[DEBUG], 2023-05-09 12:48:24 pcwLog:136 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@ddf20fd
+[DEBUG], 2023-05-09 12:48:24 pcwLog:152 - 5.flag :1
+[DEBUG], 2023-05-09 12:48:24 pcwLog:81 - ---------------------------
+[DEBUG], 2023-05-09 12:48:24 pcwLog:82 - -flag:1
+[DEBUG], 2023-05-09 12:48:24 pcwLog:83 - ---------------------------
+[DEBUG], 2023-05-09 14:15:56 pcwLog:190 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 14:15:56 pcwLog:191 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 14:15:56 pcwLog:192 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-09 14:15:56 pcwLog:195 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6fff253c
+[DEBUG], 2023-05-09 14:15:56 pcwLog:202 - 5. flag:1
+[DEBUG], 2023-05-09 14:15:56 pcwLog:72 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 14:15:56 pcwLog:73 - 2. conn: oracle.jdbc.driver.T4CConnection@c65a5ef
+[DEBUG], 2023-05-09 14:15:56 pcwLog:74 - 3. param: BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-09 14:15:56 pcwLog:78 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@2fab4aff
+[DEBUG], 2023-05-09 14:15:56 pcwLog:90 - 5. flag: 1
+[DEBUG], 2023-05-09 14:15:56 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 14:15:56 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@55f3c410
+[DEBUG], 2023-05-09 14:15:56 pcwLog:254 - 3. param:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=null, regId=ll, modDt=null, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-09 14:15:56 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4a8ab068
+[DEBUG], 2023-05-09 14:15:56 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@1136b469
+[DEBUG], 2023-05-09 14:15:56 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=h, contents=e, readCnt=0, regDt=2023-05-09 14:15:56, regId=ll, modDt=2023-05-09 14:15:56, modId=o, toString()=com.pcwk.ehr.board.dao.BoardDTO@cda0432]
+[DEBUG], 2023-05-09 14:15:56 pcwLog:63 - =============================
+[DEBUG], 2023-05-09 14:15:56 pcwLog:64 - 등록 성공
+[DEBUG], 2023-05-09 14:15:56 pcwLog:65 - =============================
+[DEBUG], 2023-05-09 14:15:56 pcwLog:131 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 14:15:56 pcwLog:132 - 2. conn: oracle.jdbc.driver.T4CConnection@4482469c
+[DEBUG], 2023-05-09 14:15:56 pcwLog:133 - 3. param: BoardDTO [seq=3, title=hU, contents=eU, readCnt=0, regDt=2023-05-09 14:15:56, regId=ll, modDt=2023-05-09 14:15:56, modId=oU, toString()=com.pcwk.ehr.board.dao.BoardDTO@cda0432]
+[DEBUG], 2023-05-09 14:15:56 pcwLog:136 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@278f8425
+[DEBUG], 2023-05-09 14:15:56 pcwLog:152 - 5.flag :1
+[DEBUG], 2023-05-09 14:15:56 pcwLog:81 - ---------------------------
+[DEBUG], 2023-05-09 14:15:56 pcwLog:82 - flag:1
+[DEBUG], 2023-05-09 14:15:56 pcwLog:83 - ---------------------------
+[DEBUG], 2023-05-09 14:15:56 pcwLog:252 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 14:15:56 pcwLog:253 - 2. conn:oracle.jdbc.driver.T4CConnection@3f36b447
+[DEBUG], 2023-05-09 14:15:56 pcwLog:254 - 3. param:BoardDTO [seq=3, title=hU, contents=eU, readCnt=0, regDt=2023-05-09 14:15:56, regId=ll, modDt=2023-05-09 14:15:56, modId=oU, toString()=com.pcwk.ehr.board.dao.BoardDTO@cda0432]
+[DEBUG], 2023-05-09 14:15:56 pcwLog:259 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@40021799
+[DEBUG], 2023-05-09 14:15:56 pcwLog:264 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@4a1c0752
+[DEBUG], 2023-05-09 14:15:56 pcwLog:281 - 6.outVO:BoardDTO [seq=3, title=hU, contents=eU, readCnt=0, regDt=2023-05-09 14:15:56, regId=ll, modDt=2023-05-09 14:15:56, modId=oU, toString()=com.pcwk.ehr.board.dao.BoardDTO@332f25c8]
+[DEBUG], 2023-05-09 14:15:56 pcwLog:88 - ---------------------------
+[DEBUG], 2023-05-09 14:15:56 pcwLog:89 - 수정 성공!
+[DEBUG], 2023-05-09 14:15:56 pcwLog:90 - ---------------------------
+[DEBUG], 2023-05-09 15:31:57 pcwLog:279 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-09 15:31:57 pcwLog:280 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 15:31:57 pcwLog:281 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:31:57 pcwLog:284 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b6579e8
+[DEBUG], 2023-05-09 15:31:57 pcwLog:291 - 5. flag:1
+[DEBUG], 2023-05-09 15:31:57 pcwLog:160 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-09 15:31:57 pcwLog:161 - 2. conn: oracle.jdbc.driver.T4CConnection@8a589a2
+[DEBUG], 2023-05-09 15:31:57 pcwLog:162 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:31:57 pcwLog:166 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@b672aa8
+[DEBUG], 2023-05-09 15:31:57 pcwLog:178 - 5. flag: 1
+[DEBUG], 2023-05-09 15:31:57 pcwLog:341 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 15:31:57 pcwLog:342 - 2. conn:oracle.jdbc.driver.T4CConnection@460f76a6
+[DEBUG], 2023-05-09 15:31:57 pcwLog:343 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:31:57 pcwLog:348 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@770d4269
+[DEBUG], 2023-05-09 15:31:57 pcwLog:353 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@17ae7628
+[DEBUG], 2023-05-09 15:31:57 pcwLog:370 - 6.outVO:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=2023-05-09 15:31:57, regId=1, modDt=2023-05-09 15:31:57, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:31:57 pcwLog:59 - ========================
+[DEBUG], 2023-05-09 15:31:57 pcwLog:60 - 등록 성공!
+[DEBUG], 2023-05-09 15:31:57 pcwLog:61 - ========================
+[DEBUG], 2023-05-09 15:31:57 pcwLog:220 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-09 15:31:57 pcwLog:221 - 2. conn: oracle.jdbc.driver.T4CConnection@67ec8477
+[DEBUG], 2023-05-09 15:31:57 pcwLog:222 - 3. param: BoardDTO [seq=3, title=1U, contents=1U, readCnt=0, regDt=2023-05-09 15:31:57, regId=1, modDt=2023-05-09 15:31:57, modId=1U, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:31:57 pcwLog:225 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@5b3f3ba0
+[DEBUG], 2023-05-09 15:31:57 pcwLog:241 - 5.flag :1
+[DEBUG], 2023-05-09 15:31:57 pcwLog:77 - ---------------------------
+[DEBUG], 2023-05-09 15:31:57 pcwLog:78 - flag:1
+[DEBUG], 2023-05-09 15:31:57 pcwLog:79 - ---------------------------
+[DEBUG], 2023-05-09 15:31:57 pcwLog:341 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-09 15:31:57 pcwLog:342 - 2. conn:oracle.jdbc.driver.T4CConnection@695a69a1
+[DEBUG], 2023-05-09 15:31:57 pcwLog:343 - 3. param:BoardDTO [seq=3, title=1U, contents=1U, readCnt=0, regDt=2023-05-09 15:31:57, regId=1, modDt=2023-05-09 15:31:57, modId=1U, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:31:57 pcwLog:348 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6443b128
+[DEBUG], 2023-05-09 15:31:57 pcwLog:353 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@5eeedb60
+[DEBUG], 2023-05-09 15:31:57 pcwLog:370 - 6.outVO:BoardDTO [seq=3, title=1U, contents=1U, readCnt=0, regDt=2023-05-09 15:31:57, regId=1, modDt=2023-05-09 15:31:57, modId=1U, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:31:57 pcwLog:84 - ---------------------------
+[DEBUG], 2023-05-09 15:31:57 pcwLog:85 - 수정 성공!
+[DEBUG], 2023-05-09 15:31:57 pcwLog:86 - ---------------------------
+[DEBUG], 2023-05-09 15:32:35 pcwLog:78 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+     --        WHERE title LIKE '제목1'||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+Where ROWNUM <= 10 
+ )TT1                                                       
+Where rnum >= 1 
+
+[DEBUG], 2023-05-09 15:32:35 pcwLog:79 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 15:32:35 pcwLog:80 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:83 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:96 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9]]
+[DEBUG], 2023-05-09 15:32:36 pcwLog:126 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:78 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+     --        WHERE title LIKE '제목1'||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+Where ROWNUM <= 10 
+ )TT1                                                       
+Where rnum >= 1 
+
+[DEBUG], 2023-05-09 15:33:58 pcwLog:79 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-09 15:33:58 pcwLog:80 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:83 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@493dfb8e
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:96 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:101 - -----------------------------------
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9]]
+[DEBUG], 2023-05-09 15:33:58 pcwLog:126 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10]]

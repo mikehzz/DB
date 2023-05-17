@@ -1,0 +1,6 @@
+SELECT  Count(*),
+        SUM(comm),
+        AVG(NVL(comm,0))
+FROM emp
+;
+--13	2200	169.230769230769230769230769230769230769

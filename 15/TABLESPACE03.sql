@@ -1,0 +1,10 @@
+SELECT TABLESPACE_name,
+		bytes/(1024*1024) MB,
+		file_name
+FROM dba_data_files;
+
+-- 데이터 베이스 파일을 필요한 만큼 자동으로 증가되도록 설정 변경
+-- C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\USERS01.DBF
+
+ALTER DATABASE DATAFILE 'C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\USERS01.DBF'
+AUTOEXTEND ON ;

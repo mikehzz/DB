@@ -1,0 +1,6 @@
+SELECT 
+        TRUNC(987.654, 2) "TRUNC01",
+        TRUNC(987.654, 0) "TRUNC02",
+        TRUNC(987.654, -1) "TRUNC03"
+FROM dual
+;

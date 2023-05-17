@@ -1,0 +1,1333 @@
+[DEBUG], 2023-05-03 15:07:26 pcwLog:8 - -------------------
+[DEBUG], 2023-05-03 15:07:26 pcwLog:9 - -main-
+[DEBUG], 2023-05-03 15:07:26 pcwLog:10 - -------------------
+[DEBUG], 2023-05-03 15:22:48 pcwLog:28 - -------------------
+[DEBUG], 2023-05-03 15:22:48 pcwLog:29 - -main-
+[DEBUG], 2023-05-03 15:22:48 pcwLog:30 - -------------------
+[DEBUG], 2023-05-03 15:22:48 pcwLog:33 - 1
+[DEBUG], 2023-05-03 15:22:48 pcwLog:35 - 2
+[DEBUG], 2023-05-03 15:22:48 pcwLog:46 - -------------------
+[DEBUG], 2023-05-03 15:22:48 pcwLog:47 - -SQLException-ORA-17067: 부적합한 Oracle URL이 지정되었습니다
+[DEBUG], 2023-05-03 15:22:48 pcwLog:48 - -------------------
+[DEBUG], 2023-05-03 15:22:48 pcwLog:60 - DB 연결종료
+[DEBUG], 2023-05-03 15:24:56 pcwLog:28 - -------------------
+[DEBUG], 2023-05-03 15:24:56 pcwLog:29 - -main-
+[DEBUG], 2023-05-03 15:24:56 pcwLog:30 - -------------------
+[DEBUG], 2023-05-03 15:24:56 pcwLog:33 - 1
+[DEBUG], 2023-05-03 15:24:56 pcwLog:35 - 2
+[DEBUG], 2023-05-03 15:24:56 pcwLog:46 - -------------------
+[DEBUG], 2023-05-03 15:24:56 pcwLog:47 - -SQLException-ORA-17067: 부적합한 Oracle URL이 지정되었습니다
+[DEBUG], 2023-05-03 15:24:56 pcwLog:48 - -------------------
+[DEBUG], 2023-05-03 15:24:56 pcwLog:60 - DB 연결종료
+[DEBUG], 2023-05-03 15:26:36 pcwLog:28 - -------------------
+[DEBUG], 2023-05-03 15:26:36 pcwLog:29 - -main-
+[DEBUG], 2023-05-03 15:26:36 pcwLog:30 - -------------------
+[DEBUG], 2023-05-03 15:26:36 pcwLog:33 - 1
+[DEBUG], 2023-05-03 15:26:36 pcwLog:35 - 2
+[DEBUG], 2023-05-03 15:26:36 pcwLog:46 - -------------------
+[DEBUG], 2023-05-03 15:26:36 pcwLog:47 - -SQLException-ORA-17866: 포트 번호에 부적합한 숫자 형식입니다.
+[DEBUG], 2023-05-03 15:26:36 pcwLog:48 - -------------------
+[DEBUG], 2023-05-03 15:26:36 pcwLog:60 - DB 연결종료
+[DEBUG], 2023-05-03 15:27:45 pcwLog:29 - -------------------
+[DEBUG], 2023-05-03 15:27:45 pcwLog:30 - -main-
+[DEBUG], 2023-05-03 15:27:45 pcwLog:31 - -------------------
+[DEBUG], 2023-05-03 15:27:45 pcwLog:34 - 1
+[DEBUG], 2023-05-03 15:27:45 pcwLog:36 - 2
+[DEBUG], 2023-05-03 15:27:46 pcwLog:39 - 3
+[DEBUG], 2023-05-03 15:27:46 pcwLog:40 - 3.1.conn:oracle.jdbc.driver.T4CConnection@7241a47d
+[DEBUG], 2023-05-03 15:27:46 pcwLog:61 - DB 연결종료
+[DEBUG], 2023-05-03 15:30:46 pcwLog:29 - -------------------
+[DEBUG], 2023-05-03 15:30:47 pcwLog:30 - -main-
+[DEBUG], 2023-05-03 15:30:47 pcwLog:31 - -------------------
+[DEBUG], 2023-05-03 15:30:47 pcwLog:34 - 1
+[DEBUG], 2023-05-03 15:30:47 pcwLog:36 - 2
+[DEBUG], 2023-05-03 15:31:01 pcwLog:29 - -------------------
+[DEBUG], 2023-05-03 15:31:01 pcwLog:30 - -main-
+[DEBUG], 2023-05-03 15:31:01 pcwLog:31 - -------------------
+[DEBUG], 2023-05-03 15:31:01 pcwLog:34 - 1
+[DEBUG], 2023-05-03 15:31:01 pcwLog:36 - 2
+[DEBUG], 2023-05-03 15:31:08 pcwLog:47 - -------------------
+[DEBUG], 2023-05-03 15:31:08 pcwLog:48 - -SQLException-ORA-12541: 데이터베이스에 접속할 수 없습니다. %s에 리스너가 없습니다. (CONNECTION_ID=YXr7yfNLTkaTAJzWzSrbxg==)
+[DEBUG], 2023-05-03 15:31:08 pcwLog:49 - -------------------
+[DEBUG], 2023-05-03 15:31:08 pcwLog:61 - DB 연결종료
+[DEBUG], 2023-05-03 15:31:17 pcwLog:29 - -------------------
+[DEBUG], 2023-05-03 15:31:17 pcwLog:30 - -main-
+[DEBUG], 2023-05-03 15:31:17 pcwLog:31 - -------------------
+[DEBUG], 2023-05-03 15:31:17 pcwLog:34 - 1
+[DEBUG], 2023-05-03 15:31:17 pcwLog:36 - 2
+[DEBUG], 2023-05-03 15:31:18 pcwLog:39 - 3
+[DEBUG], 2023-05-03 15:31:18 pcwLog:40 - 3.1.conn:oracle.jdbc.driver.T4CConnection@7241a47d
+[DEBUG], 2023-05-03 15:31:18 pcwLog:61 - DB 연결종료
+[DEBUG], 2023-05-03 15:31:22 pcwLog:47 - -------------------
+[DEBUG], 2023-05-03 15:31:22 pcwLog:48 - -SQLException-ORA-12541: 데이터베이스에 접속할 수 없습니다. %s에 리스너가 없습니다. (CONNECTION_ID=wQ2TYRH3R16YU66fWKoPoA==)
+[DEBUG], 2023-05-03 15:31:22 pcwLog:49 - -------------------
+[DEBUG], 2023-05-03 15:31:22 pcwLog:61 - DB 연결종료
+[DEBUG], 2023-05-03 16:16:25 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:16:25 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:16:25 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:16:25 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-03 16:16:25 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:16:26 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:16:26 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@11dee337
+[DEBUG], 2023-05-03 16:16:26 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@11dee337
+[DEBUG], 2023-05-03 16:16:26 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@11acdc30
+[DEBUG], 2023-05-03 16:16:26 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:16:26 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:16:26 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:16:26 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:17:15 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:17:15 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:17:15 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:17:15 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-03 16:17:15 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:17:15 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:17:15 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:17:15 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:17:15 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:17:15 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:17:15 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@611f8234
+[DEBUG], 2023-05-03 16:17:15 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:17:15 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:17:15 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:17:15 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:18:44 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:18:44 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:18:44 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:18:45 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-03 16:18:45 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:18:45 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:18:45 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:18:45 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:18:45 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:18:45 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:18:45 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@611f8234
+[DEBUG], 2023-05-03 16:18:45 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:18:45 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:18:45 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:18:45 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:20:27 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:20:27 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:20:27 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:20:27 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-03 16:20:27 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:20:27 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:20:27 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:20:27 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:20:27 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@21c64522
+[DEBUG], 2023-05-03 16:20:27 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@21c64522
+[DEBUG], 2023-05-03 16:20:27 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@460f76a6
+[DEBUG], 2023-05-03 16:20:27 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:20:27 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:20:27 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:20:27 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:22:04 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:22:04 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:22:04 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:22:04 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ce5a68e
+[DEBUG], 2023-05-03 16:22:04 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:22:04 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:22:04 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:22:04 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:22:04 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@62923ee6
+[DEBUG], 2023-05-03 16:22:04 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@62923ee6
+[DEBUG], 2023-05-03 16:22:04 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7807ac2c
+[DEBUG], 2023-05-03 16:22:04 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:22:04 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:22:04 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:22:04 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:22:49 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:22:49 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:22:49 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:22:49 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-03 16:22:49 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:22:49 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:22:49 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:22:49 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:22:49 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:22:49 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:22:49 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@611f8234
+[DEBUG], 2023-05-03 16:22:49 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:22:49 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:22:49 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:22:49 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:24:04 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:24:04 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:24:04 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:24:04 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ce5a68e
+[DEBUG], 2023-05-03 16:24:04 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:24:04 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:24:04 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-03 16:24:04 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-03 16:24:04 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@644c78d4
+[DEBUG], 2023-05-03 16:24:04 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:24:04 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:24:04 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:24:04 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:25:25 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:25:25 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:25:25 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:25:25 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ce5a68e
+[DEBUG], 2023-05-03 16:25:25 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:25:26 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:25:26 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-03 16:25:26 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-03 16:25:26 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@644c78d4
+[DEBUG], 2023-05-03 16:25:26 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:25:26 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:25:26 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:25:26 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:25:36 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:25:36 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:25:36 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:25:36 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ce5a68e
+[DEBUG], 2023-05-03 16:25:36 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:25:36 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:25:36 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-03 16:25:36 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-03 16:25:36 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@644c78d4
+[DEBUG], 2023-05-03 16:25:36 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:25:36 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:25:36 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:25:36 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:26:15 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:26:15 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:26:15 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:26:15 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6fff253c
+[DEBUG], 2023-05-03 16:26:15 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:26:15 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:26:15 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:26:15 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:26:15 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@4a8ab068
+[DEBUG], 2023-05-03 16:26:15 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@4a8ab068
+[DEBUG], 2023-05-03 16:26:15 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6bab2585
+[DEBUG], 2023-05-03 16:26:15 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:26:15 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:26:15 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:26:15 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:26:22 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:26:22 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:26:22 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:26:22 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@40dd3977
+[DEBUG], 2023-05-03 16:26:22 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:26:22 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:26:22 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6b5176f2
+[DEBUG], 2023-05-03 16:26:22 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6b5176f2
+[DEBUG], 2023-05-03 16:26:22 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ec0c838
+[DEBUG], 2023-05-03 16:26:22 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:26:22 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:26:22 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:26:22 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:26:48 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:26:48 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:26:48 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:26:48 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@64bc21ac
+[DEBUG], 2023-05-03 16:26:49 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:26:49 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:26:49 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:26:49 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:26:49 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@7bb3a9fe
+[DEBUG], 2023-05-03 16:26:49 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@7bb3a9fe
+[DEBUG], 2023-05-03 16:26:49 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@62923ee6
+[DEBUG], 2023-05-03 16:26:49 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:26:49 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:26:49 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:26:49 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:26:59 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:26:59 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:26:59 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:27:00 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@593e824f
+[DEBUG], 2023-05-03 16:27:00 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:27:00 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:27:00 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:27:00 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:27:00 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@644c78d4
+[DEBUG], 2023-05-03 16:27:00 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@644c78d4
+[DEBUG], 2023-05-03 16:27:00 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7bb3a9fe
+[DEBUG], 2023-05-03 16:27:00 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:27:00 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:27:00 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:27:00 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:29:22 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:29:22 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:29:22 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:29:22 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b6579e8
+[DEBUG], 2023-05-03 16:29:22 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:29:22 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:29:22 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6e46d9f4
+[DEBUG], 2023-05-03 16:29:22 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6e46d9f4
+[DEBUG], 2023-05-03 16:29:22 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@21c64522
+[DEBUG], 2023-05-03 16:29:22 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:29:22 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:29:22 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:29:22 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:30:11 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:30:11 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:30:11 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:30:11 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@439a8f59
+[DEBUG], 2023-05-03 16:30:11 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:30:11 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:30:11 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6fefce9e
+[DEBUG], 2023-05-03 16:30:11 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6fefce9e
+[DEBUG], 2023-05-03 16:30:11 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@192f2f27
+[DEBUG], 2023-05-03 16:30:11 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:30:11 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:30:11 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:30:11 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:30:28 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:30:28 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:30:28 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:30:28 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7c041b41
+[DEBUG], 2023-05-03 16:30:28 pcwLog:97 - 5.flag0
+[DEBUG], 2023-05-03 16:30:28 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:30:28 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@532a02d9
+[DEBUG], 2023-05-03 16:30:28 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@532a02d9
+[DEBUG], 2023-05-03 16:30:28 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7cbee484
+[DEBUG], 2023-05-03 16:30:28 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:30:28 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:30:28 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:30:28 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:30:59 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:30:59 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:30:59 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:30:59 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@593e824f
+[DEBUG], 2023-05-03 16:30:59 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:30:59 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:30:59 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:30:59 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:30:59 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@644c78d4
+[DEBUG], 2023-05-03 16:30:59 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@644c78d4
+[DEBUG], 2023-05-03 16:30:59 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7bb3a9fe
+[DEBUG], 2023-05-03 16:30:59 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:30:59 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:30:59 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:30:59 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:30:59 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:33:59 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:33:59 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:33:59 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:34:00 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-03 16:34:00 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:34:00 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:34:00 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:34:00 pcwLog:80 - 1. sql;
+ INSERT INTO board (   
+     seq,              
+     title,            
+     contents,         
+     read_cnt,         
+     reg_id,           
+     mod_id            
+ ) VALUES (            
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?,                
+     ?                 
+ )                     
+
+[DEBUG], 2023-05-03 16:34:00 pcwLog:81 - 2. conn:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:34:00 pcwLog:82 - 3. param:oracle.jdbc.driver.T4CConnection@74bdc168
+[DEBUG], 2023-05-03 16:34:00 pcwLog:86 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@611f8234
+[DEBUG], 2023-05-03 16:34:00 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:34:00 pcwLog:102 - -SQLException--ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:34:00 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:34:00 pcwLog:31 - 등록 성공!
+[DEBUG], 2023-05-03 16:35:12 pcwLog:80 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:35:12 pcwLog:81 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:35:12 pcwLog:82 - 3. param: BoardDTO [seq=3, title=제목3, contents=내용3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=com.pcwk.ehr.board.dao.BoardDTO@53f48368]
+[DEBUG], 2023-05-03 16:35:12 pcwLog:86 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@63cd604c
+[DEBUG], 2023-05-03 16:35:12 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:35:12 pcwLog:102 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:35:12 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:35:13 pcwLog:80 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:35:13 pcwLog:81 - 2. conn: oracle.jdbc.driver.T4CConnection@7997b197
+[DEBUG], 2023-05-03 16:35:13 pcwLog:82 - 3. param: BoardDTO [seq=3, title=제목3, contents=내용3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=com.pcwk.ehr.board.dao.BoardDTO@53f48368]
+[DEBUG], 2023-05-03 16:35:13 pcwLog:86 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@55f3c410
+[DEBUG], 2023-05-03 16:35:13 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:35:13 pcwLog:102 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:35:13 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:35:13 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:35:13 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:36:31 pcwLog:80 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:36:31 pcwLog:81 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:36:31 pcwLog:82 - 3. param: BoardDTO [seq=999999, title=제목3, contents=내용3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-03 16:36:31 pcwLog:86 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6fff253c
+[DEBUG], 2023-05-03 16:36:31 pcwLog:98 - 5. flag: 1
+[DEBUG], 2023-05-03 16:36:31 pcwLog:80 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:36:31 pcwLog:81 - 2. conn: oracle.jdbc.driver.T4CConnection@5cc69cfe
+[DEBUG], 2023-05-03 16:36:31 pcwLog:82 - 3. param: BoardDTO [seq=999999, title=제목3, contents=내용3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=com.pcwk.ehr.board.dao.BoardDTO@a8c1f44]
+[DEBUG], 2023-05-03 16:36:31 pcwLog:86 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7997b197
+[DEBUG], 2023-05-03 16:36:31 pcwLog:101 - -------------
+[DEBUG], 2023-05-03 16:36:31 pcwLog:102 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:36:31 pcwLog:103 - -------------
+[DEBUG], 2023-05-03 16:36:31 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:36:31 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:37:21 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:37:21 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:37:21 pcwLog:70 - 3. param: BoardDTO [seq=3, title=제목3, contents=내용3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=com.pcwk.ehr.board.dao.BoardDTO@485a3466]
+[DEBUG], 2023-05-03 16:37:21 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@9d157ff
+[DEBUG], 2023-05-03 16:37:21 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:37:21 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:37:21 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:37:21 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:37:21 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@4089713
+[DEBUG], 2023-05-03 16:37:21 pcwLog:70 - 3. param: BoardDTO [seq=3, title=제목3, contents=내용3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=com.pcwk.ehr.board.dao.BoardDTO@485a3466]
+[DEBUG], 2023-05-03 16:37:21 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@b91d8c4
+[DEBUG], 2023-05-03 16:37:21 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:37:21 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:37:21 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:37:21 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:37:21 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:40:58 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:40:58 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:40:58 pcwLog:70 - 3. param: BoardDTO [seq=3, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-03 16:40:58 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@72ccd81a
+[DEBUG], 2023-05-03 16:40:58 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:40:58 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:40:58 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:40:58 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:40:58 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@532a02d9
+[DEBUG], 2023-05-03 16:40:58 pcwLog:70 - 3. param: BoardDTO [seq=3, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-03 16:40:58 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7cbee484
+[DEBUG], 2023-05-03 16:40:58 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:40:58 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:40:58 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:40:58 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:40:58 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:41:53 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:41:53 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:41:53 pcwLog:70 - 3. param: BoardDTO [seq=1, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@f0e995e]
+[DEBUG], 2023-05-03 16:41:53 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@3a4e343
+[DEBUG], 2023-05-03 16:41:53 pcwLog:86 - 5. flag: 1
+[DEBUG], 2023-05-03 16:41:53 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:41:53 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@b672aa8
+[DEBUG], 2023-05-03 16:41:53 pcwLog:70 - 3. param: BoardDTO [seq=1, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@f0e995e]
+[DEBUG], 2023-05-03 16:41:53 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6e46d9f4
+[DEBUG], 2023-05-03 16:41:53 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:41:53 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:41:53 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:41:53 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:41:53 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:47:52 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:47:52 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:47:52 pcwLog:70 - 3. param: BoardDTO [seq=3, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@30f5a68a]
+[DEBUG], 2023-05-03 16:47:52 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@61861a29
+[DEBUG], 2023-05-03 16:47:52 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:47:52 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:47:52 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:47:52 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:47:52 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6e46d9f4
+[DEBUG], 2023-05-03 16:47:52 pcwLog:70 - 3. param: BoardDTO [seq=3, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@30f5a68a]
+[DEBUG], 2023-05-03 16:47:52 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@21c64522
+[DEBUG], 2023-05-03 16:47:52 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:47:52 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:47:52 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:47:52 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:47:52 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:48:13 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:48:13 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:48:13 pcwLog:70 - 3. param: BoardDTO [seq=1000000, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-03 16:48:13 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@72ccd81a
+[DEBUG], 2023-05-03 16:48:13 pcwLog:86 - 5. flag: 1
+[DEBUG], 2023-05-03 16:48:13 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:48:13 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@55f3c410
+[DEBUG], 2023-05-03 16:48:13 pcwLog:70 - 3. param: BoardDTO [seq=1000000, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin_3, modDt=null, modId=admin_3, toString()=com.pcwk.ehr.board.dao.BoardDTO@5ce33a58]
+[DEBUG], 2023-05-03 16:48:13 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@4a8ab068
+[DEBUG], 2023-05-03 16:48:13 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:48:13 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:48:13 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:48:13 pcwLog:33 - 등록 실패!
+[DEBUG], 2023-05-03 16:48:13 pcwLog:34 - 0
+[DEBUG], 2023-05-03 16:49:16 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:49:16 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:49:16 pcwLog:70 - 3. param: BoardDTO [seq=3, title=제목_33, contents=내용_33, readCnt=0, regDt=null, regId=admin_33, modDt=null, modId=admin_33, toString()=com.pcwk.ehr.board.dao.BoardDTO@5357c287]
+[DEBUG], 2023-05-03 16:49:16 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@493dfb8e
+[DEBUG], 2023-05-03 16:49:16 pcwLog:89 - -------------
+[DEBUG], 2023-05-03 16:49:16 pcwLog:90 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-03 16:49:16 pcwLog:91 - -------------
+[DEBUG], 2023-05-03 16:49:16 pcwLog:19 - 등록 실패!
+[DEBUG], 2023-05-03 16:49:49 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:49:49 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:49:49 pcwLog:70 - 3. param: BoardDTO [seq=5656, title=제목_33, contents=내용_33, readCnt=0, regDt=null, regId=admin_33, modDt=null, modId=admin_33, toString()=com.pcwk.ehr.board.dao.BoardDTO@5357c287]
+[DEBUG], 2023-05-03 16:49:49 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@493dfb8e
+[DEBUG], 2023-05-03 16:49:49 pcwLog:86 - 5. flag: 1
+[DEBUG], 2023-05-03 16:49:49 pcwLog:17 - 등록 성공!
+[DEBUG], 2023-05-03 16:51:43 pcwLog:68 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-03 16:51:43 pcwLog:69 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-03 16:51:43 pcwLog:70 - 3. param: BoardDTO [seq=787878, title=제목_33, contents=내용_33, readCnt=0, regDt=null, regId=admin_33, modDt=null, modId=admin_33, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-03 16:51:43 pcwLog:74 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@7f69d591
+[DEBUG], 2023-05-03 16:51:43 pcwLog:86 - 5. flag: 1
+[DEBUG], 2023-05-03 16:51:43 pcwLog:17 - 등록 성공!

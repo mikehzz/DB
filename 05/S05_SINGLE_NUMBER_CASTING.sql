@@ -1,0 +1,6 @@
+SELECT  TO_NUMBER('1200')+500 AS TO_NUM01
+        --TO_NUMBER('1,200') AS TO_NUM02 -- 숫자형 문자 아님
+
+FROM dual
+;
+--1700

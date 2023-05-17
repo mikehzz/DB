@@ -1,0 +1,40 @@
+[DEBUG], 2023-05-04 15:22:31 pcwLog:145 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-04 15:22:31 pcwLog:146 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-04 15:22:31 pcwLog:147 - 3. param:BoardDTO [seq=3, title=제목_2, contents=내용_2, readCnt=0, regDt=null, regId=admin_2, modDt=null, modId=admin_2, toString()=com.pcwk.ehr.board.dao.BoardDTO@5b04476e]
+[DEBUG], 2023-05-04 15:22:32 pcwLog:152 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7f69d591
+[DEBUG], 2023-05-04 15:22:32 pcwLog:182 - --------------------
+[DEBUG], 2023-05-04 15:22:32 pcwLog:183 - -SQLException-ORA-00923: FROM 키워드가 필요한 위치에 없습니다.
+
+[DEBUG], 2023-05-04 15:22:32 pcwLog:184 - --------------------
+[DEBUG], 2023-05-04 15:22:32 pcwLog:20 - *조회 실패!
+[DEBUG], 2023-05-04 15:24:49 pcwLog:145 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-04 15:24:49 pcwLog:146 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-04 15:24:49 pcwLog:147 - 3. param:BoardDTO [seq=3, title=제목_2, contents=내용_2, readCnt=0, regDt=null, regId=admin_2, modDt=null, modId=admin_2, toString()=com.pcwk.ehr.board.dao.BoardDTO@4c37b5b]
+[DEBUG], 2023-05-04 15:24:49 pcwLog:152 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6a1d204a
+[DEBUG], 2023-05-04 15:24:49 pcwLog:157 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@65327f5
+[DEBUG], 2023-05-04 15:24:49 pcwLog:174 - 6.outVO:BoardDTO [seq=3, title=제목3, contents=내용3, readCnt=0, regDt=2023-05-03 16:16:27, regId=admin3, modDt=2023-05-03 16:16:27, modId=admin3, toString()=com.pcwk.ehr.board.dao.BoardDTO@2e52fb3e]
+[DEBUG], 2023-05-04 15:24:49 pcwLog:18 - *조회 성공!

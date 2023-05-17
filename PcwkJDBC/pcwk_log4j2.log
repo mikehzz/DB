@@ -1,0 +1,1377 @@
+[DEBUG], 2023-05-10 09:20:44 pcwLog:77 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+     --        WHERE title LIKE '제목1'||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <=?*(?-1)+?  
+ )TT1                                                       
+ WHERE rnum >=?*(?-1)+1                     
+
+[DEBUG], 2023-05-10 09:20:44 pcwLog:78 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:20:44 pcwLog:79 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-10 09:20:44 pcwLog:82 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@71c5b236
+[DEBUG], 2023-05-10 09:20:44 pcwLog:120 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:23:56 pcwLog:77 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+     --        WHERE title LIKE '제목1'||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <=?*(?-1)+?  
+ )TT1                                                       
+ WHERE rnum >=?*(?-1)+1                     
+
+[DEBUG], 2023-05-10 09:23:56 pcwLog:78 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:23:56 pcwLog:79 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-10 09:23:56 pcwLog:82 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5df417a7
+[DEBUG], 2023-05-10 09:23:56 pcwLog:120 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:27:19 pcwLog:77 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+     --        WHERE title LIKE '제목1'||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 09:27:19 pcwLog:78 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:27:19 pcwLog:79 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-10 09:27:19 pcwLog:82 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3a4e343
+[DEBUG], 2023-05-10 09:27:19 pcwLog:120 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:28:57 pcwLog:77 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+     --        WHERE title LIKE '제목1'||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 09:28:57 pcwLog:78 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:28:57 pcwLog:79 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:82 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=11, title=제목11, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=11]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=12, title=제목12, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=12]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=13, title=제목13, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=13]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=14, title=제목14, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=14]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:115 - BoardDTO [seq=15, title=제목15, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=15]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:120 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=11, title=제목11, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=11]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=12, title=제목12, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=12]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=13, title=제목13, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=13]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=14, title=제목14, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=14]]
+[DEBUG], 2023-05-10 09:28:57 pcwLog:129 - BoardDTO [seq=15, title=제목15, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=15]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:88 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 09:42:00 pcwLog:89 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:42:00 pcwLog:90 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=20, pageno=1, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:93 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ce5a68e
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=11, title=제목11, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=11, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=12, title=제목12, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=12, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=13, title=제목13, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=13, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=14, title=제목14, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=14, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:141 - BoardDTO [seq=15, title=제목15, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=15, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:146 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=1, title=제목1, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=2, title=제목2, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=2, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=3, title=제목3, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=3, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=4, title=제목4, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=4, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=5, title=제목5, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=5, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=6, title=제목6, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=6, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=7, title=제목7, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=7, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=8, title=제목8, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=8, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=9, title=제목9, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=9, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=10, title=제목10, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=10, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=11, title=제목11, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=11, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=12, title=제목12, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=12, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=13, title=제목13, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=13, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=14, title=제목14, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=14, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:42:00 pcwLog:129 - BoardDTO [seq=15, title=제목15, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230508 12:05:00, modId=PCWK, toString()=DTO [no=15, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:45:42 pcwLog:85 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+            WHERE title LIKE ?||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 09:45:42 pcwLog:86 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:45:42 pcwLog:87 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=10, searchWord=제목1]]
+[DEBUG], 2023-05-10 09:45:42 pcwLog:90 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-10 09:45:42 pcwLog:143 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:46:22 pcwLog:85 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board_99                                  
+            WHERE title LIKE ?||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 09:46:22 pcwLog:86 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:46:22 pcwLog:87 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=10, searchWord=제목]]
+[DEBUG], 2023-05-10 09:46:23 pcwLog:90 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ce5a68e
+[DEBUG], 2023-05-10 09:46:23 pcwLog:143 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:46:46 pcwLog:85 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board                                  
+            WHERE title LIKE ?||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 09:46:46 pcwLog:86 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:46:46 pcwLog:87 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=10, searchWord=메로나]]
+[DEBUG], 2023-05-10 09:46:46 pcwLog:90 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ce5a68e
+[DEBUG], 2023-05-10 09:46:46 pcwLog:143 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:49:41 pcwLog:88 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board                                  
+            WHERE title LIKE ?||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 09:49:41 pcwLog:89 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 09:49:41 pcwLog:90 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=10, searchWord=메로나]]
+[DEBUG], 2023-05-10 09:49:41 pcwLog:93 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2f94c4db
+[DEBUG], 2023-05-10 09:49:41 pcwLog:141 - BoardDTO [seq=16, title=메로나U, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230509 02:05:28, modId=admin_0U, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 09:49:41 pcwLog:146 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 09:49:41 pcwLog:133 - BoardDTO [seq=16, title=메로나U, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230509 02:05:28, modId=admin_0U, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:15:17 pcwLog:99 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board                                  
+            WHERE title LIKE ?||'%'                  
+            or contents LIKE ?||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 10:15:17 pcwLog:100 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 10:15:17 pcwLog:101 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=5, searchWord=오늘]]
+[DEBUG], 2023-05-10 10:15:17 pcwLog:104 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@593e824f
+[DEBUG], 2023-05-10 10:15:17 pcwLog:161 - BoardDTO [seq=17, title=오늘U, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230509 03:05:54, modId=admin_17U, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:15:17 pcwLog:166 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 10:15:17 pcwLog:136 - BoardDTO [seq=17, title=오늘U, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230509 03:05:54, modId=admin_17U, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:34:03 pcwLog:99 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board                                  
+            WHERE title LIKE ?||'%'                  
+            or contents LIKE ?||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 10:34:04 pcwLog:100 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 10:34:04 pcwLog:101 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=5, searchWord=오늘]]
+[DEBUG], 2023-05-10 10:34:04 pcwLog:104 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-10 10:34:04 pcwLog:161 - BoardDTO [seq=17, title=오늘U, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230509 03:05:54, modId=admin_17U, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:34:04 pcwLog:166 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 10:34:04 pcwLog:136 - BoardDTO [seq=17, title=오늘U, contents=null, readCnt=0, regDt=null, regId=null, modDt=20230509 03:05:54, modId=admin_17U, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:34:04 pcwLog:286 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 10:34:04 pcwLog:287 - 2. conn: oracle.jdbc.driver.T4CConnection@3e134896
+[DEBUG], 2023-05-10 10:34:04 pcwLog:288 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=5, searchWord=오늘]]
+[DEBUG], 2023-05-10 10:34:04 pcwLog:292 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@4ebadd3d
+[DEBUG], 2023-05-10 10:34:04 pcwLog:307 - -------------
+[DEBUG], 2023-05-10 10:34:04 pcwLog:308 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-10 10:34:04 pcwLog:309 - -------------
+[DEBUG], 2023-05-10 10:34:28 pcwLog:286 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 10:34:28 pcwLog:287 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 10:34:28 pcwLog:288 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:34:28 pcwLog:292 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@3a4e343
+[DEBUG], 2023-05-10 10:34:28 pcwLog:307 - -------------
+[DEBUG], 2023-05-10 10:34:28 pcwLog:308 - SQLException ORA-00001: 무결성 제약 조건(SCOTT.PK_BOARD)에 위배됩니다
+
+[DEBUG], 2023-05-10 10:34:28 pcwLog:309 - -------------
+[DEBUG], 2023-05-10 10:40:08 pcwLog:458 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 10:40:08 pcwLog:459 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 10:40:08 pcwLog:460 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:40:08 pcwLog:465 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@439a8f59
+[DEBUG], 2023-05-10 10:40:08 pcwLog:470 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@312afbc7
+[DEBUG], 2023-05-10 10:40:08 pcwLog:487 - 6.outVO:BoardDTO [seq=3, title=1U, contents=1U, readCnt=0, regDt=2023-05-09 15:31:57, regId=1, modDt=2023-05-09 15:31:57, modId=1U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:40:08 pcwLog:21 - *조회 성공!
+[DEBUG], 2023-05-10 10:40:08 pcwLog:215 - 1. sql:
+ UPDATE board              				
+ SET read_cnt = NVL(read_cnt,0) + 1        
+ WHERE seq = ?                          
+
+[DEBUG], 2023-05-10 10:40:08 pcwLog:216 - 2. conn: oracle.jdbc.driver.T4CConnection@4525d1d3
+[DEBUG], 2023-05-10 10:40:08 pcwLog:217 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:40:08 pcwLog:220 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@60921b21
+[DEBUG], 2023-05-10 10:40:08 pcwLog:225 - 5. flag: 1
+[DEBUG], 2023-05-10 10:40:08 pcwLog:26 - flag:1
+[DEBUG], 2023-05-10 10:46:13 pcwLog:396 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 10:46:13 pcwLog:397 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 10:46:13 pcwLog:398 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:46:13 pcwLog:401 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@25bcd0c7
+[DEBUG], 2023-05-10 10:46:13 pcwLog:408 - 5. flag:1
+[DEBUG], 2023-05-10 10:46:13 pcwLog:277 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 10:46:13 pcwLog:278 - 2. conn: oracle.jdbc.driver.T4CConnection@18e7143f
+[DEBUG], 2023-05-10 10:46:13 pcwLog:279 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:46:13 pcwLog:283 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6fefce9e
+[DEBUG], 2023-05-10 10:46:13 pcwLog:295 - 5. flag: 1
+[DEBUG], 2023-05-10 10:46:13 pcwLog:151 - flag:1
+[DEBUG], 2023-05-10 10:46:13 pcwLog:215 - 1. sql:
+ UPDATE board              				
+ SET read_cnt = NVL(read_cnt,0) + 1        
+ WHERE seq = ?                          
+
+[DEBUG], 2023-05-10 10:46:13 pcwLog:216 - 2. conn: oracle.jdbc.driver.T4CConnection@ec0c838
+[DEBUG], 2023-05-10 10:46:13 pcwLog:217 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:46:13 pcwLog:220 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@29cfd92b
+[DEBUG], 2023-05-10 10:46:13 pcwLog:225 - 5. flag: 1
+[DEBUG], 2023-05-10 10:46:13 pcwLog:458 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 10:46:13 pcwLog:459 - 2. conn:oracle.jdbc.driver.T4CConnection@11dee337
+[DEBUG], 2023-05-10 10:46:13 pcwLog:460 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:46:13 pcwLog:465 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4a8ab068
+[DEBUG], 2023-05-10 10:46:13 pcwLog:470 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@1136b469
+[DEBUG], 2023-05-10 10:46:13 pcwLog:487 - 6.outVO:BoardDTO [seq=3, title=1, contents=1, readCnt=1, regDt=2023-05-10 10:46:12, regId=1, modDt=2023-05-10 10:46:12, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:46:13 pcwLog:157 - ---------------------
+[DEBUG], 2023-05-10 10:46:13 pcwLog:158 - -조회count성공-
+[DEBUG], 2023-05-10 10:46:13 pcwLog:159 - ---------------------
+[DEBUG], 2023-05-10 10:49:23 pcwLog:396 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 10:49:23 pcwLog:397 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 10:49:23 pcwLog:398 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:49:23 pcwLog:401 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-10 10:49:23 pcwLog:408 - 5. flag:1
+[DEBUG], 2023-05-10 10:49:23 pcwLog:277 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 10:49:23 pcwLog:278 - 2. conn: oracle.jdbc.driver.T4CConnection@f9b7332
+[DEBUG], 2023-05-10 10:49:23 pcwLog:279 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:49:23 pcwLog:283 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@4f8969b0
+[DEBUG], 2023-05-10 10:49:23 pcwLog:295 - 5. flag: 1
+[DEBUG], 2023-05-10 10:49:23 pcwLog:154 - flag:1
+[DEBUG], 2023-05-10 10:49:23 pcwLog:215 - 1. sql:
+ UPDATE board              				
+ SET read_cnt = NVL(read_cnt,0) + 1        
+ WHERE seq = ?                          
+
+[DEBUG], 2023-05-10 10:49:23 pcwLog:216 - 2. conn: oracle.jdbc.driver.T4CConnection@6e46d9f4
+[DEBUG], 2023-05-10 10:49:23 pcwLog:217 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:49:23 pcwLog:220 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@21c64522
+[DEBUG], 2023-05-10 10:49:23 pcwLog:225 - 5. flag: 1
+[DEBUG], 2023-05-10 10:49:23 pcwLog:458 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 10:49:23 pcwLog:459 - 2. conn:oracle.jdbc.driver.T4CConnection@460f76a6
+[DEBUG], 2023-05-10 10:49:23 pcwLog:460 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:49:23 pcwLog:465 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1922e6d
+[DEBUG], 2023-05-10 10:49:23 pcwLog:470 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@6579c3d9
+[DEBUG], 2023-05-10 10:49:23 pcwLog:487 - 6.outVO:BoardDTO [seq=3, title=1, contents=1, readCnt=1, regDt=2023-05-10 10:49:22, regId=1, modDt=2023-05-10 10:49:22, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null]]
+[DEBUG], 2023-05-10 10:49:23 pcwLog:162 - ---------------------
+[DEBUG], 2023-05-10 10:49:23 pcwLog:163 - -조회count성공-
+[DEBUG], 2023-05-10 10:49:23 pcwLog:164 - ---------------------
+[DEBUG], 2023-05-10 11:31:56 pcwLog:484 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 11:31:56 pcwLog:485 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 11:31:56 pcwLog:486 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:31:56 pcwLog:489 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@439a8f59
+[DEBUG], 2023-05-10 11:31:56 pcwLog:496 - 5. flag:1
+[DEBUG], 2023-05-10 11:31:56 pcwLog:365 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 11:31:56 pcwLog:366 - 2. conn: oracle.jdbc.driver.T4CConnection@2c177f9e
+[DEBUG], 2023-05-10 11:31:56 pcwLog:367 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:31:56 pcwLog:371 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@18e7143f
+[DEBUG], 2023-05-10 11:31:56 pcwLog:383 - 5. flag: 1
+[DEBUG], 2023-05-10 11:31:56 pcwLog:154 - flag:1
+[DEBUG], 2023-05-10 11:31:56 pcwLog:303 - 1. sql:
+ UPDATE board              				
+ SET read_cnt = NVL(read_cnt,0) + 1        
+ WHERE seq = ?                          
+
+[DEBUG], 2023-05-10 11:31:56 pcwLog:304 - 2. conn: oracle.jdbc.driver.T4CConnection@6b5176f2
+[DEBUG], 2023-05-10 11:31:56 pcwLog:305 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:31:56 pcwLog:308 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@ec0c838
+[DEBUG], 2023-05-10 11:31:56 pcwLog:313 - 5. flag: 1
+[DEBUG], 2023-05-10 11:31:56 pcwLog:546 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 11:31:56 pcwLog:547 - 2. conn:oracle.jdbc.driver.T4CConnection@29cfd92b
+[DEBUG], 2023-05-10 11:31:56 pcwLog:548 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:31:56 pcwLog:553 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@55f3c410
+[DEBUG], 2023-05-10 11:31:56 pcwLog:558 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@38499e48
+[DEBUG], 2023-05-10 11:31:56 pcwLog:575 - 6.outVO:BoardDTO [seq=3, title=1, contents=1, readCnt=1, regDt=2023-05-10 11:31:55, regId=1, modDt=2023-05-10 11:31:55, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:31:56 pcwLog:164 - ---------------------
+[DEBUG], 2023-05-10 11:31:56 pcwLog:165 - -조회count성공-
+[DEBUG], 2023-05-10 11:31:56 pcwLog:166 - ---------------------
+[DEBUG], 2023-05-10 11:33:41 pcwLog:484 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 11:33:41 pcwLog:485 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 11:33:41 pcwLog:486 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:33:41 pcwLog:489 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7c041b41
+[DEBUG], 2023-05-10 11:33:41 pcwLog:496 - 5. flag:1
+[DEBUG], 2023-05-10 11:33:41 pcwLog:365 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 11:33:41 pcwLog:366 - 2. conn: oracle.jdbc.driver.T4CConnection@4a8ab068
+[DEBUG], 2023-05-10 11:33:41 pcwLog:367 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:33:41 pcwLog:371 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6bab2585
+[DEBUG], 2023-05-10 11:33:41 pcwLog:383 - 5. flag: 1
+[DEBUG], 2023-05-10 11:33:41 pcwLog:154 - flag:1
+[DEBUG], 2023-05-10 11:33:41 pcwLog:303 - 1. sql:
+ UPDATE board              				
+ SET read_cnt = NVL(read_cnt,0) + 1        
+ WHERE seq = ?                          
+
+[DEBUG], 2023-05-10 11:33:41 pcwLog:304 - 2. conn: oracle.jdbc.driver.T4CConnection@4089713
+[DEBUG], 2023-05-10 11:33:41 pcwLog:305 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:33:41 pcwLog:308 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@b91d8c4
+[DEBUG], 2023-05-10 11:33:41 pcwLog:313 - 5. flag: 1
+[DEBUG], 2023-05-10 11:33:41 pcwLog:546 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 11:33:41 pcwLog:547 - 2. conn:oracle.jdbc.driver.T4CConnection@4fd4cae3
+[DEBUG], 2023-05-10 11:33:41 pcwLog:548 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:33:41 pcwLog:553 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2baa8d82
+[DEBUG], 2023-05-10 11:33:41 pcwLog:558 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@48bfb884
+[DEBUG], 2023-05-10 11:33:41 pcwLog:575 - 6.outVO:BoardDTO [seq=3, title=1, contents=1, readCnt=1, regDt=2023-05-10 11:33:40, regId=1, modDt=2023-05-10 11:33:40, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:33:41 pcwLog:164 - ---------------------
+[DEBUG], 2023-05-10 11:33:41 pcwLog:165 - -조회count성공-
+[DEBUG], 2023-05-10 11:33:41 pcwLog:166 - ---------------------
+[DEBUG], 2023-05-10 11:34:05 pcwLog:484 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 11:34:05 pcwLog:485 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 11:34:05 pcwLog:486 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:05 pcwLog:489 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3a4e343
+[DEBUG], 2023-05-10 11:34:05 pcwLog:496 - 5. flag:1
+[DEBUG], 2023-05-10 11:34:05 pcwLog:365 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 11:34:05 pcwLog:366 - 2. conn: oracle.jdbc.driver.T4CConnection@4f8969b0
+[DEBUG], 2023-05-10 11:34:05 pcwLog:367 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:05 pcwLog:371 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@8a589a2
+[DEBUG], 2023-05-10 11:34:05 pcwLog:383 - 5. flag: 1
+[DEBUG], 2023-05-10 11:34:05 pcwLog:155 - flag:1
+[DEBUG], 2023-05-10 11:34:05 pcwLog:303 - 1. sql:
+ UPDATE board              				
+ SET read_cnt = NVL(read_cnt,0) + 1        
+ WHERE seq = ?                          
+
+[DEBUG], 2023-05-10 11:34:05 pcwLog:304 - 2. conn: oracle.jdbc.driver.T4CConnection@21c64522
+[DEBUG], 2023-05-10 11:34:05 pcwLog:305 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:05 pcwLog:308 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@460f76a6
+[DEBUG], 2023-05-10 11:34:05 pcwLog:313 - 5. flag: 1
+[DEBUG], 2023-05-10 11:34:05 pcwLog:546 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 11:34:05 pcwLog:547 - 2. conn:oracle.jdbc.driver.T4CConnection@770d4269
+[DEBUG], 2023-05-10 11:34:05 pcwLog:548 - 3. param:BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:05 pcwLog:553 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@74bdc168
+[DEBUG], 2023-05-10 11:34:05 pcwLog:558 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@42f22995
+[DEBUG], 2023-05-10 11:34:05 pcwLog:575 - 6.outVO:BoardDTO [seq=3, title=1, contents=1, readCnt=1, regDt=2023-05-10 11:34:05, regId=1, modDt=2023-05-10 11:34:05, modId=1, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:05 pcwLog:165 - ---------------------
+[DEBUG], 2023-05-10 11:34:05 pcwLog:166 - -조회count성공-
+[DEBUG], 2023-05-10 11:34:05 pcwLog:167 - ---------------------
+[DEBUG], 2023-05-10 11:34:29 pcwLog:99 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board                                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 11:34:29 pcwLog:100 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 11:34:29 pcwLog:101 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:29 pcwLog:104 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7c041b41
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=1, title=제목, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:27, modId=admin, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=15, title=제목_15, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:25, modId=admin_15, toString()=DTO [no=2, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=2, title=제목_2, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:22, modId=admin_2, toString()=DTO [no=3, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=12, title=제목, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:15, modId=관리자, toString()=DTO [no=4, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=3, title=1, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:05, modId=1, toString()=DTO [no=5, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=14, title=제목, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:46, modId=Home, toString()=DTO [no=6, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=7, title=제목_7, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:50, modId=admin_7, toString()=DTO [no=7, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=686, title=제목_686, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:51, modId=admin_686, toString()=DTO [no=8, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=0, title=제목_0, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:13, modId=admin_0, toString()=DTO [no=9, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:161 - BoardDTO [seq=29, title=제목_29, contents=null, readCnt=30, regDt=null, regId=null, modDt=20230510 11:05:55, modId=admin_29, toString()=DTO [no=10, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:166 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=1, title=제목, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:27, modId=admin, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=15, title=제목_15, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:25, modId=admin_15, toString()=DTO [no=2, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=2, title=제목_2, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:22, modId=admin_2, toString()=DTO [no=3, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=12, title=제목, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:15, modId=관리자, toString()=DTO [no=4, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=3, title=1, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:05, modId=1, toString()=DTO [no=5, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=14, title=제목, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:46, modId=Home, toString()=DTO [no=6, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=7, title=제목_7, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:50, modId=admin_7, toString()=DTO [no=7, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=686, title=제목_686, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:51, modId=admin_686, toString()=DTO [no=8, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=0, title=제목_0, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 11:05:13, modId=admin_0, toString()=DTO [no=9, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:137 - BoardDTO [seq=29, title=제목_29, contents=null, readCnt=30, regDt=null, regId=null, modDt=20230510 11:05:55, modId=admin_29, toString()=DTO [no=10, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:233 - 1. sql:
+SELECT COUNT(*) total_cnt 
+FROM board                
+
+[DEBUG], 2023-05-10 11:34:30 pcwLog:234 - 2. conn: oracle.jdbc.driver.T4CConnection@42f22995
+[DEBUG], 2023-05-10 11:34:30 pcwLog:235 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:34:30 pcwLog:140 - totalCnt:39
+[DEBUG], 2023-05-10 11:36:45 pcwLog:99 - 1. sql:
+ SELECT     TT1.rnum AS no,   --SELECT 문에 함수 사용.           
+            TT1.seq,                                      
+            TT1.title,                                      
+            TT1.mod_id,                                     
+            TT1.read_cnt,                                    
+            TO_CHAR(TT1.mod_dt,'YYYYMMDD HH:MM:SS' ) mod_dt 
+     FROM (                                                 
+         SELECT ROWNUM rnum,T1.*                            
+         FROM (                                             
+             SELECT *                                       
+             FROM board                                  
+            WHERE title LIKE ?||'%'                  
+            or contents LIKE ?||'%'                  
+     --        WHERE contents like '내용1'||'%'               
+             ORDER BY mod_dt desc                           
+         )T1                                                
+         WHERE ROWNUM <= ? *( ?-1)+ ?   
+ )TT1                                                       
+ WHERE rnum >= ? *( ? -1)+1                     
+
+[DEBUG], 2023-05-10 11:36:45 pcwLog:100 - 2. conn: oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 11:36:45 pcwLog:101 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=5, searchWord=오늘, totalCnt=0]]
+[DEBUG], 2023-05-10 11:36:45 pcwLog:104 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-10 11:36:45 pcwLog:161 - BoardDTO [seq=17, title=오늘, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 10:05:59, modId=admin_17, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:36:45 pcwLog:166 - -----------------------------------------------------------------
+[DEBUG], 2023-05-10 11:36:45 pcwLog:137 - BoardDTO [seq=17, title=오늘, contents=null, readCnt=1, regDt=null, regId=null, modDt=20230510 10:05:59, modId=admin_17, toString()=DTO [no=1, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 11:36:45 pcwLog:233 - 1. sql:
+SELECT COUNT(*) total_cnt 
+FROM board                
+            WHERE title LIKE ?||'%'                  
+            or contents LIKE ?||'%'                  
+
+[DEBUG], 2023-05-10 11:36:45 pcwLog:234 - 2. conn: oracle.jdbc.driver.T4CConnection@3e134896
+[DEBUG], 2023-05-10 11:36:45 pcwLog:235 - 3. param: BoardDTO [seq=3, title=1, contents=1, readCnt=0, regDt=null, regId=1, modDt=null, modId=1, toString()=DTO [no=0, pageSize=10, pageno=1, searchDiv=5, searchWord=오늘, totalCnt=0]]
+[DEBUG], 2023-05-10 11:36:45 pcwLog:140 - totalCnt:1
+[DEBUG], 2023-05-10 12:06:17 pcwLog:186 - uuid:2e1849fd-cc46-4c5a-87a6-3776801a29f2
+[DEBUG], 2023-05-10 12:06:17 pcwLog:187 - uuid length:36
+[DEBUG], 2023-05-10 12:06:37 pcwLog:186 - uuid:2be23d9b-1f6a-4f10-8614-5bc89efa47a5
+[DEBUG], 2023-05-10 12:06:37 pcwLog:187 - uuid length:36
+[DEBUG], 2023-05-10 12:06:39 pcwLog:186 - uuid:ed6ff31f-efdc-4a01-9259-1bd154c76411
+[DEBUG], 2023-05-10 12:06:39 pcwLog:187 - uuid length:36
+[DEBUG], 2023-05-10 12:11:44 pcwLog:199 - uuid:18dafd97-8ab4-4643-9e3f-d7358d34f6b3
+[DEBUG], 2023-05-10 12:11:44 pcwLog:202 - pk:18dafd978ab446439e3fd7358d34f6b3
+[DEBUG], 2023-05-10 12:11:44 pcwLog:203 - uuid length():32
+[DEBUG], 2023-05-10 12:12:10 pcwLog:186 - currentDateTime2023-05-10T12:12:10.107797700
+[DEBUG], 2023-05-10 14:10:36 pcwLog:482 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 14:10:36 pcwLog:483 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 14:10:36 pcwLog:484 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:10:36 pcwLog:487 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b6579e8
+[DEBUG], 2023-05-10 14:10:36 pcwLog:498 - --------------------
+[DEBUG], 2023-05-10 14:10:36 pcwLog:499 - -SQLException-ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+[DEBUG], 2023-05-10 14:10:36 pcwLog:500 - --------------------
+[DEBUG], 2023-05-10 14:10:36 pcwLog:363 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 14:10:36 pcwLog:364 - 2. conn: oracle.jdbc.driver.T4CConnection@33617539
+[DEBUG], 2023-05-10 14:10:36 pcwLog:365 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:10:36 pcwLog:369 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@209775a9
+[DEBUG], 2023-05-10 14:10:36 pcwLog:384 - -------------
+[DEBUG], 2023-05-10 14:10:36 pcwLog:385 - SQLException ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+[DEBUG], 2023-05-10 14:10:36 pcwLog:386 - -------------
+[DEBUG], 2023-05-10 14:10:36 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:10:36 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@644c78d4
+[DEBUG], 2023-05-10 14:10:36 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:10:36 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7bb3a9fe
+[DEBUG], 2023-05-10 14:10:36 pcwLog:581 - --------------------
+[DEBUG], 2023-05-10 14:10:36 pcwLog:582 - -SQLException-ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+[DEBUG], 2023-05-10 14:10:36 pcwLog:583 - --------------------
+[DEBUG], 2023-05-10 14:24:38 pcwLog:482 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 14:24:38 pcwLog:483 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 14:24:38 pcwLog:484 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:24:38 pcwLog:487 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@593e824f
+[DEBUG], 2023-05-10 14:24:38 pcwLog:494 - 5. flag:0
+[DEBUG], 2023-05-10 14:24:38 pcwLog:363 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 14:24:38 pcwLog:364 - 2. conn: oracle.jdbc.driver.T4CConnection@1fc0053e
+[DEBUG], 2023-05-10 14:24:38 pcwLog:365 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:24:38 pcwLog:369 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@33617539
+[DEBUG], 2023-05-10 14:24:38 pcwLog:381 - 5. flag: 1
+[DEBUG], 2023-05-10 14:24:38 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:24:38 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@76a82f33
+[DEBUG], 2023-05-10 14:24:38 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:24:38 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@644c78d4
+[DEBUG], 2023-05-10 14:24:38 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@1c12f3ee
+[DEBUG], 2023-05-10 14:24:38 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=2023-05-10 14:24:37, regId=admin3, modDt=2023-05-10 14:24:37, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:24:38 pcwLog:108 - seq
+[DEBUG], 2023-05-10 14:24:38 pcwLog:73 - =============================
+[DEBUG], 2023-05-10 14:24:38 pcwLog:74 - 등록 실패
+[DEBUG], 2023-05-10 14:24:38 pcwLog:75 - =============================
+[DEBUG], 2023-05-10 14:24:38 pcwLog:423 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-10 14:24:38 pcwLog:424 - 2. conn: oracle.jdbc.driver.T4CConnection@3f36b447
+[DEBUG], 2023-05-10 14:24:38 pcwLog:425 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:24:37, regId=admin3, modDt=2023-05-10 14:24:37, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:24:38 pcwLog:428 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@332f25c8
+[DEBUG], 2023-05-10 14:24:38 pcwLog:444 - 5.flag :1
+[DEBUG], 2023-05-10 14:24:38 pcwLog:86 - ---------------------------
+[DEBUG], 2023-05-10 14:24:38 pcwLog:87 - flag:1
+[DEBUG], 2023-05-10 14:24:38 pcwLog:88 - ---------------------------
+[DEBUG], 2023-05-10 14:24:38 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:24:38 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@61d01788
+[DEBUG], 2023-05-10 14:24:38 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:24:37, regId=admin3, modDt=2023-05-10 14:24:37, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:24:38 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@847f3e7
+[DEBUG], 2023-05-10 14:24:38 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@69cac930
+[DEBUG], 2023-05-10 14:24:38 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:24:37, regId=admin3, modDt=2023-05-10 14:24:37, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:24:38 pcwLog:108 - seq
+[DEBUG], 2023-05-10 14:24:38 pcwLog:97 - ---------------------------
+[DEBUG], 2023-05-10 14:24:38 pcwLog:98 - 수정 실패!
+[DEBUG], 2023-05-10 14:24:38 pcwLog:99 - ---------------------------
+[DEBUG], 2023-05-10 14:26:46 pcwLog:482 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 14:26:46 pcwLog:483 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 14:26:46 pcwLog:484 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:26:46 pcwLog:487 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7c041b41
+[DEBUG], 2023-05-10 14:26:46 pcwLog:494 - 5. flag:1
+[DEBUG], 2023-05-10 14:26:46 pcwLog:363 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 14:26:46 pcwLog:364 - 2. conn: oracle.jdbc.driver.T4CConnection@6fefce9e
+[DEBUG], 2023-05-10 14:26:46 pcwLog:365 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:26:46 pcwLog:369 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@192f2f27
+[DEBUG], 2023-05-10 14:26:46 pcwLog:381 - 5. flag: 1
+[DEBUG], 2023-05-10 14:26:46 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:26:46 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@4089713
+[DEBUG], 2023-05-10 14:26:46 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:26:46 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@b91d8c4
+[DEBUG], 2023-05-10 14:26:46 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@27068a50
+[DEBUG], 2023-05-10 14:26:46 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=2023-05-10 14:26:46, regId=admin3, modDt=2023-05-10 14:26:46, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:26:46 pcwLog:73 - =============================
+[DEBUG], 2023-05-10 14:26:46 pcwLog:74 - 등록 실패
+[DEBUG], 2023-05-10 14:26:46 pcwLog:75 - =============================
+[DEBUG], 2023-05-10 14:26:46 pcwLog:423 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-10 14:26:46 pcwLog:424 - 2. conn: oracle.jdbc.driver.T4CConnection@264c5d07
+[DEBUG], 2023-05-10 14:26:46 pcwLog:425 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:26:46, regId=admin3, modDt=2023-05-10 14:26:46, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:26:46 pcwLog:428 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6ad6fa53
+[DEBUG], 2023-05-10 14:26:46 pcwLog:444 - 5.flag :1
+[DEBUG], 2023-05-10 14:26:46 pcwLog:86 - ---------------------------
+[DEBUG], 2023-05-10 14:26:46 pcwLog:87 - flag:1
+[DEBUG], 2023-05-10 14:26:46 pcwLog:88 - ---------------------------
+[DEBUG], 2023-05-10 14:26:46 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:26:46 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@175acfb2
+[DEBUG], 2023-05-10 14:26:46 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:26:46, regId=admin3, modDt=2023-05-10 14:26:46, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:26:46 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@71c905a3
+[DEBUG], 2023-05-10 14:26:46 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@30af7377
+[DEBUG], 2023-05-10 14:26:46 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:26:46, regId=admin3, modDt=2023-05-10 14:26:46, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:26:46 pcwLog:97 - ---------------------------
+[DEBUG], 2023-05-10 14:26:46 pcwLog:98 - 수정 실패!
+[DEBUG], 2023-05-10 14:26:46 pcwLog:99 - ---------------------------
+[DEBUG], 2023-05-10 14:27:42 pcwLog:482 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 14:27:42 pcwLog:483 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 14:27:42 pcwLog:484 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:27:42 pcwLog:487 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@40dd3977
+[DEBUG], 2023-05-10 14:27:42 pcwLog:494 - 5. flag:1
+[DEBUG], 2023-05-10 14:27:42 pcwLog:363 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 14:27:42 pcwLog:364 - 2. conn: oracle.jdbc.driver.T4CConnection@5217f3d0
+[DEBUG], 2023-05-10 14:27:42 pcwLog:365 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:27:42 pcwLog:369 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@2416a51
+[DEBUG], 2023-05-10 14:27:42 pcwLog:381 - 5. flag: 1
+[DEBUG], 2023-05-10 14:27:42 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:27:42 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@29cfd92b
+[DEBUG], 2023-05-10 14:27:42 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:27:42 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@11dee337
+[DEBUG], 2023-05-10 14:27:42 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@17ae7628
+[DEBUG], 2023-05-10 14:27:42 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=2023-05-10 14:27:41, regId=admin3, modDt=2023-05-10 14:27:41, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:27:42 pcwLog:73 - =============================
+[DEBUG], 2023-05-10 14:27:42 pcwLog:74 - 등록 실패
+[DEBUG], 2023-05-10 14:27:42 pcwLog:75 - =============================
+[DEBUG], 2023-05-10 14:27:42 pcwLog:423 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-10 14:27:42 pcwLog:424 - 2. conn: oracle.jdbc.driver.T4CConnection@67ec8477
+[DEBUG], 2023-05-10 14:27:42 pcwLog:425 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:27:41, regId=admin3, modDt=2023-05-10 14:27:41, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:27:42 pcwLog:428 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@5b3f3ba0
+[DEBUG], 2023-05-10 14:27:42 pcwLog:444 - 5.flag :1
+[DEBUG], 2023-05-10 14:27:42 pcwLog:86 - ---------------------------
+[DEBUG], 2023-05-10 14:27:42 pcwLog:87 - flag:1
+[DEBUG], 2023-05-10 14:27:42 pcwLog:88 - ---------------------------
+[DEBUG], 2023-05-10 14:27:42 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:27:42 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@695a69a1
+[DEBUG], 2023-05-10 14:27:42 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:27:41, regId=admin3, modDt=2023-05-10 14:27:41, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:27:42 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6443b128
+[DEBUG], 2023-05-10 14:27:42 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@5eeedb60
+[DEBUG], 2023-05-10 14:27:42 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:27:41, regId=admin3, modDt=2023-05-10 14:27:41, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:27:42 pcwLog:97 - ---------------------------
+[DEBUG], 2023-05-10 14:27:42 pcwLog:98 - 수정 실패!
+[DEBUG], 2023-05-10 14:27:42 pcwLog:99 - ---------------------------
+[DEBUG], 2023-05-10 14:29:45 pcwLog:482 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 14:29:45 pcwLog:483 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 14:29:45 pcwLog:484 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:29:45 pcwLog:487 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@32cb636e
+[DEBUG], 2023-05-10 14:29:45 pcwLog:494 - 5. flag:1
+[DEBUG], 2023-05-10 14:29:45 pcwLog:363 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 14:29:45 pcwLog:364 - 2. conn: oracle.jdbc.driver.T4CConnection@54361a9
+[DEBUG], 2023-05-10 14:29:45 pcwLog:365 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:29:45 pcwLog:369 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@37ebc9d8
+[DEBUG], 2023-05-10 14:29:45 pcwLog:381 - 5. flag: 1
+[DEBUG], 2023-05-10 14:29:45 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:29:45 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@6e46d9f4
+[DEBUG], 2023-05-10 14:29:45 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:29:45 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@21c64522
+[DEBUG], 2023-05-10 14:29:46 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@38499e48
+[DEBUG], 2023-05-10 14:29:46 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=2023-05-10 14:29:45, regId=admin3, modDt=2023-05-10 14:29:45, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:29:46 pcwLog:68 - ========================
+[DEBUG], 2023-05-10 14:29:46 pcwLog:69 - 등록 성공!
+[DEBUG], 2023-05-10 14:29:46 pcwLog:70 - ========================
+[DEBUG], 2023-05-10 14:29:46 pcwLog:423 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-10 14:29:46 pcwLog:424 - 2. conn: oracle.jdbc.driver.T4CConnection@7c28c1
+[DEBUG], 2023-05-10 14:29:46 pcwLog:425 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:29:45, regId=admin3, modDt=2023-05-10 14:29:45, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:29:46 pcwLog:428 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@3703bf3c
+[DEBUG], 2023-05-10 14:29:46 pcwLog:444 - 5.flag :1
+[DEBUG], 2023-05-10 14:29:46 pcwLog:86 - ---------------------------
+[DEBUG], 2023-05-10 14:29:46 pcwLog:87 - flag:1
+[DEBUG], 2023-05-10 14:29:46 pcwLog:88 - ---------------------------
+[DEBUG], 2023-05-10 14:29:46 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:29:46 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@ddf20fd
+[DEBUG], 2023-05-10 14:29:46 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:29:45, regId=admin3, modDt=2023-05-10 14:29:45, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:29:46 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4b1abd11
+[DEBUG], 2023-05-10 14:29:46 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@3f36b447
+[DEBUG], 2023-05-10 14:29:46 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:29:45, regId=admin3, modDt=2023-05-10 14:29:45, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:29:46 pcwLog:93 - ---------------------------
+[DEBUG], 2023-05-10 14:29:46 pcwLog:94 - 수정 성공!
+[DEBUG], 2023-05-10 14:29:46 pcwLog:95 - ---------------------------
+[DEBUG], 2023-05-10 14:30:42 pcwLog:482 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 14:30:42 pcwLog:483 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 14:30:42 pcwLog:484 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:30:42 pcwLog:487 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3a4e343
+[DEBUG], 2023-05-10 14:30:42 pcwLog:494 - 5. flag:1
+[DEBUG], 2023-05-10 14:30:42 pcwLog:363 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 14:30:42 pcwLog:364 - 2. conn: oracle.jdbc.driver.T4CConnection@37ebc9d8
+[DEBUG], 2023-05-10 14:30:42 pcwLog:365 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:30:42 pcwLog:369 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@6fa590ba
+[DEBUG], 2023-05-10 14:30:42 pcwLog:381 - 5. flag: 1
+[DEBUG], 2023-05-10 14:30:42 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:30:42 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@21c64522
+[DEBUG], 2023-05-10 14:30:42 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:30:42 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@460f76a6
+[DEBUG], 2023-05-10 14:30:42 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@1136b469
+[DEBUG], 2023-05-10 14:30:42 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=2023-05-10 14:30:41, regId=admin3, modDt=2023-05-10 14:30:41, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:30:42 pcwLog:68 - ========================
+[DEBUG], 2023-05-10 14:30:42 pcwLog:69 - 등록 성공!
+[DEBUG], 2023-05-10 14:30:42 pcwLog:70 - ========================
+[DEBUG], 2023-05-10 14:30:42 pcwLog:423 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-10 14:30:42 pcwLog:424 - 2. conn: oracle.jdbc.driver.T4CConnection@25d958c6
+[DEBUG], 2023-05-10 14:30:42 pcwLog:425 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:30:41, regId=admin3, modDt=2023-05-10 14:30:41, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:30:42 pcwLog:428 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@ddf20fd
+[DEBUG], 2023-05-10 14:30:42 pcwLog:444 - 5.flag :1
+[DEBUG], 2023-05-10 14:30:42 pcwLog:86 - ---------------------------
+[DEBUG], 2023-05-10 14:30:42 pcwLog:87 - flag:1
+[DEBUG], 2023-05-10 14:30:42 pcwLog:88 - ---------------------------
+[DEBUG], 2023-05-10 14:30:42 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:30:42 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@4b1abd11
+[DEBUG], 2023-05-10 14:30:42 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:30:41, regId=admin3, modDt=2023-05-10 14:30:41, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:30:42 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5eeedb60
+[DEBUG], 2023-05-10 14:30:42 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@40021799
+[DEBUG], 2023-05-10 14:30:42 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:30:41, regId=admin3, modDt=2023-05-10 14:30:41, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:30:42 pcwLog:93 - ---------------------------
+[DEBUG], 2023-05-10 14:30:42 pcwLog:94 - 수정 성공!
+[DEBUG], 2023-05-10 14:30:42 pcwLog:95 - ---------------------------
+[DEBUG], 2023-05-10 14:34:40 pcwLog:482 - 1. sql:
+ DELETE FROM board 
+ WHERE seq = ?     
+
+[DEBUG], 2023-05-10 14:34:40 pcwLog:483 - 2. conn:oracle.jdbc.driver.T4CConnection@6a78afa0
+[DEBUG], 2023-05-10 14:34:40 pcwLog:484 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:34:40 pcwLog:487 - 4. pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@64bc21ac
+[DEBUG], 2023-05-10 14:34:40 pcwLog:494 - 5. flag:1
+[DEBUG], 2023-05-10 14:34:40 pcwLog:363 - 1. sql:
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+[DEBUG], 2023-05-10 14:34:40 pcwLog:364 - 2. conn: oracle.jdbc.driver.T4CConnection@33617539
+[DEBUG], 2023-05-10 14:34:40 pcwLog:365 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:34:40 pcwLog:369 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@209775a9
+[DEBUG], 2023-05-10 14:34:40 pcwLog:381 - 5. flag: 1
+[DEBUG], 2023-05-10 14:34:41 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:34:41 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@644c78d4
+[DEBUG], 2023-05-10 14:34:41 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=null, regId=admin3, modDt=null, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:34:41 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7bb3a9fe
+[DEBUG], 2023-05-10 14:34:41 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@57bd802b
+[DEBUG], 2023-05-10 14:34:41 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3, contents=내용_3, readCnt=0, regDt=2023-05-10 14:34:40, regId=admin3, modDt=2023-05-10 14:34:40, modId=admin3, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:34:41 pcwLog:68 - ========================
+[DEBUG], 2023-05-10 14:34:41 pcwLog:69 - 등록 성공!
+[DEBUG], 2023-05-10 14:34:41 pcwLog:70 - ========================
+[DEBUG], 2023-05-10 14:34:41 pcwLog:423 - 1. sql:
+ UPDATE board              
+ SET title = ?,            
+     contents=?,           
+     mod_dt = SYSDATE,     
+     mod_id =?             
+ WHERE seq = ?             
+
+[DEBUG], 2023-05-10 14:34:41 pcwLog:424 - 2. conn: oracle.jdbc.driver.T4CConnection@40021799
+[DEBUG], 2023-05-10 14:34:41 pcwLog:425 - 3. param: BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:34:40, regId=admin3, modDt=2023-05-10 14:34:40, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:34:41 pcwLog:428 - 4. pstmt: oracle.jdbc.driver.OraclePreparedStatementWrapper@61d01788
+[DEBUG], 2023-05-10 14:34:41 pcwLog:444 - 5.flag :1
+[DEBUG], 2023-05-10 14:34:41 pcwLog:86 - ---------------------------
+[DEBUG], 2023-05-10 14:34:41 pcwLog:87 - flag:1
+[DEBUG], 2023-05-10 14:34:41 pcwLog:88 - ---------------------------
+[DEBUG], 2023-05-10 14:34:41 pcwLog:544 - 1. sql:
+  SELECT        
+    seq,        
+    title,      
+    contents,   
+    read_cnt,   
+    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt,     
+    reg_id,      
+   TO_CHAR(mod_dt,'YYYY-MM-DD HH24:MI:SS') mod_dt,     
+    mod_id      
+	FROM board     
+	WHERE seq = ?  
+
+[DEBUG], 2023-05-10 14:34:41 pcwLog:545 - 2. conn:oracle.jdbc.driver.T4CConnection@847f3e7
+[DEBUG], 2023-05-10 14:34:41 pcwLog:546 - 3. param:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:34:40, regId=admin3, modDt=2023-05-10 14:34:40, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:34:41 pcwLog:551 - 4.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5d39f2d8
+[DEBUG], 2023-05-10 14:34:41 pcwLog:556 - 5.rs:oracle.jdbc.driver.ForwardOnlyResultSet@6ad6fa53
+[DEBUG], 2023-05-10 14:34:41 pcwLog:573 - 6.outVO:BoardDTO [seq=20230510741b3465e92e401f8b6ad06383f7e50c, title=제목_3U, contents=내용_3U, readCnt=0, regDt=2023-05-10 14:34:40, regId=admin3, modDt=2023-05-10 14:34:40, modId=admin3U, toString()=DTO [no=0, pageSize=0, pageno=0, searchDiv=0, searchWord=null, totalCnt=0]]
+[DEBUG], 2023-05-10 14:34:41 pcwLog:93 - ---------------------------
+[DEBUG], 2023-05-10 14:34:41 pcwLog:94 - 수정 성공!
+[DEBUG], 2023-05-10 14:34:41 pcwLog:95 - ---------------------------
